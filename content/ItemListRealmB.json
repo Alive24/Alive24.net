@@ -1,0 +1,83 @@
+{
+  "title": "ItemListRealmB",
+  "body": [
+    {
+      "categoryName": "Technical Support",
+      "categoryNameCN": "技术支持服务",
+      "items": [
+        {
+          "itemName": "Personal Support",
+          "itemNameCN": "个人技术支持",
+          "itemDescription": "ielts/toefl ielts/toeflielts/toeflielts/toefl",
+          "itemDescriptionCN": "雅思/托福辅导雅思/托福辅导雅思/托福辅导雅思/托福辅导"
+        },
+        {
+          "itemName": "Worksite Support",
+          "itemNameCN": "工作场景支持",
+          "itemDescription": "BECBECBECBECBEC",
+          "itemDescriptionCN": "剑桥商务英语辅导剑桥商务英语辅导剑桥商务英语辅导剑桥商务英语辅导"
+        },
+        {
+          "itemName": "Multimedia Support",
+          "itemNameCN": "多媒体技术支持",
+          "itemDescription": "teenagerEnglish",
+          "itemDescriptionCN": "青少年英语辅导青少年英语辅导青少年英语辅导青少年英语辅导"
+        },
+        {
+          "itemName": "PC DIY",
+          "itemNameCN": "PC DIY组装/维护",
+          "itemDescription": "teenagerEnglish",
+          "itemDescriptionCN": "青少年英语辅导青少年英语辅导青少年英语辅导青少年英语辅导"
+        }
+      ]
+    },
+    {
+      "categoryName": "Development",
+      "categoryNameCN": "开发服务",
+      "items": [
+        {
+          "itemName": "Automation Script",
+          "itemNameCN": "自动化脚本开发",
+          "itemDescription": "BECBECBECBECBEC",
+          "itemDescriptionCN": "剑桥商务英语辅导剑桥商务英语辅导剑桥商务英语辅导剑桥商务英语辅导"
+        },
+        {
+          "itemName": "Desktop Software",
+          "itemNameCN": "桌面软件开发",
+          "itemDescription": "BECBECBECBECBEC",
+          "itemDescriptionCN": "剑桥商务英语辅导剑桥商务英语辅导剑桥商务英语辅导剑桥商务英语辅导"
+        },
+        {
+          "itemName": "Website Development",
+          "itemNameCN": "网站（前端、后端）开发",
+          "itemDescription": "BECBECBECBECBEC",
+          "itemDescriptionCN": "剑桥商务英语辅导剑桥商务英语辅导剑桥商务英语辅导剑桥商务英语辅导"
+        },
+        {
+          "itemName": "Interactive Mechanical Artwork",
+          "itemNameCN": "交互式艺术工控开发",
+          "itemDescription": "BECBECBECBECBEC",
+          "itemDescriptionCN": "剑桥商务英语辅导剑桥商务英语辅导剑桥商务英语辅导剑桥商务英语辅导"
+        },
+        {
+          "itemName": "IoT DIY",
+          "itemNameCN": "物联网DIY开发",
+          "itemDescription": "BECBECBECBECBEC",
+          "itemDescriptionCN": "剑桥商务英语辅导剑桥商务英语辅导剑桥商务英语辅导剑桥商务英语辅导"
+        }
+      ]
+    },
+    {
+      "categoryName": "STEM Education",
+      "categoryNameCN": "STEM教育",
+      "items": [
+        {
+          "itemName": "STEM Course Development and Instruction",
+          "itemNameCN": "STEM类课程开发与授课",
+          "itemDescription": "BECBECBECBECBEC",
+          "itemDescriptionCN": "剑桥商务英语辅导剑桥商务英语辅导剑桥商务英语辅导剑桥商务英语辅导"
+        }
+      ]
+    }
+  ]
+}
