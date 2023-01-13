@@ -1,5 +1,9 @@
 {
   "title": "ItemListRealmA",
+  "realmName": "Language",
+  "realmNameCN": "语言类",
+  "realmDescription": "Language Description",
+  "realmDescriptionCN": "语言类的说明",
   "body": [
     {
       "categoryName": "Language Learning",

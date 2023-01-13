@@ -2,90 +2,72 @@
   "title": "ItemListRealmC",
   "body": [
     {
-      "categoryName": "Consultancy and Miscellaneous",
-      "categoryNameCN": "咨询与其他服务类",
+      "categoryName": "Foreign Affairs",
+      "categoryNameCN": "涉外专业咨询与检索",
       "items": [
         {
           "itemName": "Studying Abroad",
-          "itemNameCN": "英语国家留学",
+          "itemNameCN": "英语国家留学咨询",
           "itemDescription": "ielts/toefl ielts/toeflielts/toeflielts/toefl",
           "itemDescriptionCN": "雅思/托福辅导雅思/托福辅导雅思/托福辅导雅思/托福辅导"
         },
         {
-          "itemName": "BEC",
-          "itemNameCN": "剑桥商务英语辅导",
+          "itemName": "Academic",
+          "itemNameCN": "海外学术信息检索",
           "itemDescription": "BECBECBECBECBEC",
           "itemDescriptionCN": "剑桥商务英语辅导剑桥商务英语辅导剑桥商务英语辅导剑桥商务英语辅导"
         },
         {
-          "itemName": "teenagerEnglish",
-          "itemNameCN": "青少年英语辅导",
+          "itemName": "Medicine",
+          "itemNameCN": "海外医学信息检索",
+          "itemDescription": "teenagerEnglish",
+          "itemDescriptionCN": "青少年英语辅导青少年英语辅导青少年英语辅导青少年英语辅导"
+        },
+        {
+          "itemName": "Business",
+          "itemNameCN": "海外商务信息检索",
+          "itemDescription": "teenagerEnglish",
+          "itemDescriptionCN": "青少年英语辅导青少年英语辅导青少年英语辅导青少年英语辅导"
+        },
+        {
+          "itemName": "Administrative and Legal",
+          "itemNameCN": "海外政策与法律信息检索",
           "itemDescription": "teenagerEnglish",
           "itemDescriptionCN": "青少年英语辅导青少年英语辅导青少年英语辅导青少年英语辅导"
         }
       ]
     },
     {
-      "categoryName": "Translation",
-      "categoryNameCN": "翻译服务",
+      "categoryName": "Specific Areas",
+      "categoryNameCN": "专业方向服务与咨询",
       "items": [
         {
-          "itemName": "Written Translation",
-          "itemNameCN": "中英书面翻译",
+          "itemName": "Mental Health",
+          "itemNameCN": "精神健康相关咨询",
           "itemDescription": "BECBECBECBECBEC",
           "itemDescriptionCN": "剑桥商务英语辅导剑桥商务英语辅导剑桥商务英语辅导剑桥商务英语辅导"
         },
         {
-          "itemName": "Interpretation (Online/Offline)",
-          "itemNameCN": "中英交替传译（线上/线下）",
+          "itemName": "Non-Conventional Education in China",
+          "itemNameCN": "创新教育相关咨询",
           "itemDescription": "BECBECBECBECBEC",
           "itemDescriptionCN": "剑桥商务英语辅导剑桥商务英语辅导剑桥商务英语辅导剑桥商务英语辅导"
         },
         {
-          "itemName": "Bilingual Subtitles",
-          "itemNameCN": "双语字幕译制",
-          "itemDescription": "BECBECBECBECBEC",
-          "itemDescriptionCN": "剑桥商务英语辅导剑桥商务英语辅导剑桥商务英语辅导剑桥商务英语辅导"
-        }
-      ]
-    },
-    {
-      "categoryName": "Applied Language",
-      "categoryNameCN": "语言应用服务",
-      "items": [
-        {
-          "itemName": "Academic English",
-          "itemNameCN": "学术英语指导",
+          "itemName": "Project Based Learning Guidance",
+          "itemNameCN": "项目式教学引导",
           "itemDescription": "BECBECBECBECBEC",
           "itemDescriptionCN": "剑桥商务英语辅导剑桥商务英语辅导剑桥商务英语辅导剑桥商务英语辅导"
         },
         {
-          "itemName": "Legal English",
-          "itemNameCN": "法律英语指导",
+          "itemName": "Youngster Activities",
+          "itemNameCN": "青少年活动支持",
           "itemDescription": "BECBECBECBECBEC",
           "itemDescriptionCN": "剑桥商务英语辅导剑桥商务英语辅导剑桥商务英语辅导剑桥商务英语辅导"
         },
         {
-          "itemName": "Communication Agent",
-          "itemNameCN": "中英通信代笔",
-          "itemDescription": "BECBECBECBECBEC",
-          "itemDescriptionCN": "剑桥商务英语辅导剑桥商务英语辅导剑桥商务英语辅导剑桥商务英语辅导"
-        },
-        {
-          "itemName": "Paperwork Guidance",
-          "itemNameCN": "文书撰写指导",
-          "itemDescription": "BECBECBECBECBEC",
-          "itemDescriptionCN": "剑桥商务英语辅导剑桥商务英语辅导剑桥商务英语辅导剑桥商务英语辅导"
-        },
-        {
-          "itemName": "Interview Guidance",
-          "itemNameCN": "口语面试指导",
-          "itemDescription": "BECBECBECBECBEC",
-          "itemDescriptionCN": "剑桥商务英语辅导剑桥商务英语辅导剑桥商务英语辅导剑桥商务英语辅导"
-        },
-        {
-          "itemName": "Dubbing",
-          "itemNameCN": "配音（英语、粤语、潮汕话）",
+          "itemName": "K-12 Curriculum",
+          "itemNameCN": "K-12 教纲科目辅导",
           "itemDescription": "BECBECBECBECBEC",
           "itemDescriptionCN": "剑桥商务英语辅导剑桥商务英语辅导剑桥商务英语辅导剑桥商务英语辅导"
         }

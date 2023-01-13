@@ -1,57 +1,47 @@
 <template>
-    <div class="container mx-auto py-10 px-4">
-        <div class="flex-wrap card bg-base-300 rounded-box">
-            <div class="flex-wrap card w-198 bg-base-100 shadow-xl">
-                <figure>
-                    <div class="relative">
-                        <img src="https://www.kindacode.com/wp-content/uploads/2022/06/night-sky.jpeg" />
-                        <h1 class="absolute text-5xl text-white top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-                            KindaCode.com</h1>
-                        <h2 class="absolute text-3xl text-amber-400 bottom-4 left-1/2 -translate-x-1/2">Bottom Center
-                        </h2>
-                        <h3 class="absolute text-2xl text-blue-300 top-5 left-5">Top Left</h3>
-                        <h3 class="absolute text-2xl text-green-300 bottom-5 right-5">Bottom Right</h3>
+    <div class="container mx-auto py-10 px-5">
+        <div class="card lg:card-side bg-base-100 shadow-xl">
+            <figure><img src="https://placeimg.com/400/400/arch" alt="Album" /></figure>
+            <div class="card-body">
+                <h2 class="card-title">{{ realmContent.realmNameCN }}</h2>
+                <p>{{ realmContent.realmDescriptionCN}}</p>
+                <div class="card-actions justify-end">
+                    <div class="hidden lg:flex gap-y-2 gap-x-2 flex-wrap w-full">
+                        <div v-for="category in realmContent.body" :key="category.categoryName"
+                            class="card rounded-box place-items-start">
+                            <h3 class="prose text-left">{{ category.categoryNameCN }}</h3>
+                            <div class="gap-y-2 gap-x-2 flex flex-wrap w-full ">
+                                <button v-for="item in category.items" :key="item.itemName"
+                                    @click="activeItem = item.itemName"
+                                    :class="{ 'btn-outline': activeItem != item.itemName }"
+                                    class="btn btn-primary btn-sm">{{ item.itemNameCN }}</button>
+                            </div>
+                        </div>
                     </div>
-                </figure>
-                <div class="flex flex-wrap card-body">
-                    <h2 class="card-title">语言类</h2>
-                    <div class="gap-y-0 flex flex-wrap w-full">
-                        <div class="flex-grow h-12 card rounded-box place-items-start">
-                            <button class="btn btn-secondary btn-sm">雅思/托福辅导</button>
-                        </div>
-                        <div class="flex-grow h-12 card rounded-box place-items-start">
-                            <button class="btn btn-secondary btn-sm">剑桥商务英语辅导</button>
-                        </div>
-                        <div class="flex-grow h-12 card rounded-box place-items-start">
-                            <button class="btn btn-secondary btn-sm">青少年英语辅导</button>
-                        </div>
-                        <div class="flex-grow h-12 card rounded-box place-items-start">
-                            <button class="btn btn-secondary btn-sm">中英书面翻译</button>
-                        </div>
-                        <div class="flex-grow h-12 card rounded-box place-items-start">
-                            <button class="btn btn-secondary btn-sm">中英交替传译（线上/线下）</button>
-                        </div>
-                        <div class="flex-grow h-12 card rounded-box place-items-start">
-                            <button class="btn btn-secondary btn-sm">Proofreading/学术英语指导</button>
-                        </div>
-                        <div class="flex-grow h-12 card rounded-box place-items-start">
-                            <button class="btn btn-secondary btn-sm">中英通信代笔</button>
-                        </div>
-                        <div class="flex-grow h-12 card rounded-box place-items-start">
-                            <button class="btn btn-secondary btn-sm">文书撰写指导</button>
-                        </div>
-                        <div class="flex-grow h-12 card rounded-box place-items-start">
-                            <button class="btn btn-secondary btn-sm">口语面试指导</button>
-                        </div>
-                        <div class="flex-grow h-12 card rounded-box place-items-start">
-                            <button class="btn btn-secondary btn-sm">双语字幕译制</button>
-                        </div>
-                        <div class="flex-grow h-12 card rounded-box place-items-start">
-                            <button class="btn btn-secondary btn-sm">配音（英语、粤语、潮汕话）</button>
-                        </div>
+                </div>
+            </div>
+        </div>
+        <div v-for="category in realmContent.body" :key="category.categoryName" class="card my-5 bg-base-100 shadow-xl">
+            <div class="card-body">
+                <h2 class="card-title">{{ category.categoryNameCN }}</h2>
+                <div v-for="item in category.items" :key="item.itemName" tabindex="0" class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box px-2">
+                    <input type="checkbox" />
+                    <div  class="collapse-title font-bold">
+                        {{item.itemNameCN}}
+                    </div>
+                    <div class="collapse-content">
+                        <p>{{item.itemDescriptionCN}}</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </template>
+
+
+<script setup>
+const activeRealm = useRoute().query?.realm || ""
+const activeItem = useState('activeItem', () => '')
+const contentTitle = `ItemListRealm${activeRealm}`
+const realmContent = activeRealm ? await queryContent().where({ title: contentTitle })?.findOne() : ""
+</script>

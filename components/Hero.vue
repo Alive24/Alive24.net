@@ -1,5 +1,6 @@
 <script setup>
 const locale = useLocale()
+const modal = useModal()
 const heroContent = computed(() => {
     if (locale.value == 'cn') {
         return {
@@ -20,13 +21,17 @@ const heroContent = computed(() => {
 </script>
 
 <template>
-    <div class="hero min-h-screen">
+    <div class="hero h-screen">
         <div class="hero-content text-center">
             <div class="max-w-md">
                 <h1 class="text-5xl font-bold">{{ heroContent.title }}</h1>
                 <p class="py-6 prose-sm text-left">{{ heroContent.intro }}</p>
                 <p class="py-6 prose-sm text-left italic">{{ heroContent.reference }}</p>
-                <button class="btn btn-primary">联系我</button>
+                <div class="flex gap-x-8 justify-between">
+                    <button class="btn btn-outline">业务范围一览</button>
+                    <button @click="modal=true" class="btn btn-primary">联系我</button>
+                    <button class="btn btn-outline">了解我更多</button>
+                </div>
             </div>
         </div>
     </div>

@@ -96,7 +96,7 @@ const realmDToastObject = computed(() => {
                             </div>
                         </div>
                     </div>
-                    <div class="flex-wrap card bg-base-300 rounded-box">
+                    <div class="flex-wrap card bg-base-500 rounded-box">
                         <div class="flex-wrap card w-96 bg-base-100 shadow-xl">
                             <figure>
                                 <div class="relative">
@@ -121,7 +121,7 @@ const realmDToastObject = computed(() => {
                             </figure>
                             <div class="flex flex-wrap card-body">
                                 <h2 class="card-title">工程类</h2>
-                                <div class="gap-y-2 flex flex-wrap w-full">
+                                <div class="gap-y-2 flex flex-wrap w-full ">
                                     <div v-for="category in itemListRealmB" :key="category.categoryName"
                                         class="card rounded-box place-items-start">
                                         <h3 class="prose text-left">{{ category.categoryNameCN }}</h3>
@@ -136,7 +136,7 @@ const realmDToastObject = computed(() => {
                             </div>
                         </div>
                     </div>
-                    <div class="flex-wrap card bg-base-300 rounded-box">
+                    <div class="flex-wrap card bg-base-500 rounded-box">
                         <div class="flex-wrap card w-96 bg-base-100 shadow-xl">
                             <figure>
                                 <div class="relative">

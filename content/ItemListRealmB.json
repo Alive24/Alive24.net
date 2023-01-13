@@ -1,5 +1,7 @@
 {
   "title": "ItemListRealmB",
+  "realmName": "Engineer",
+  "realmNameCN": "工程类",
   "body": [
     {
       "categoryName": "Technical Support",
