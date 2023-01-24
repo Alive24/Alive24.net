@@ -2,12 +2,24 @@
   <!-- The button to open modal -->
   <!-- Put this part before </body> tag -->
   <input type="checkbox" id="contact-me-modal" class="modal-toggle" />
-  <div class="modal modal-bottom sm:modal-middle" :class="{ 'modal-open': modal}">
-    <div class="modal-box w-11/12 max-w-5xl">
-      <h3 class="font-bold text-lg">Congratulations random Internet user!</h3>
-      <p class="py-4">You've been selected for a chance to get one year of subscription to use Wikipedia for free!</p>
-      <div class="modal-action">
-        <label @click="modal=false" class="btn">Yay!</label>
+  <div class="modal modal-bottom sm:modal-middle" :class="{ 'modal-open': modal }">
+    <div class="modal-box w-11/12 max-w-5xl min-w-fit">
+      <h3 class="font-bold text-lg">联系我</h3>
+      <div class="max-w-5xl mx-auto">
+        <p class="py-4">You've been selected for a chance to get one year of subscription to use Wikipedia for free!</p>
+        <div class="flex flex-wrap max-w-5xl mx-auto">
+          <div>
+            <img class="scale-75" src="~/assets/image/QR-Alive.png" alt="Alive的微信" />
+            <p class="text-center">Alive的微信</p>
+          </div>
+          <div>
+            <img class="scale-75" src="~/assets/image/QR-订阅号.jpg" alt="Alive的工作台" />
+            <p class="text-center">公众号：Alive的工作台</p>
+          </div>
+        </div>
+        <div class="modal-action">
+          <label @click="modal = false" class="btn">Yay!</label>
+        </div>
       </div>
     </div>
   </div>
@@ -25,36 +37,45 @@
           </label>
         </div>
         <div class="navbar-start">
-          <a class="btn btn-ghost normal-case text-xl">Alive的工作台</a>
+          <a class="btn btn-ghost normal-case text-xl">
+            <NuxtLink to="/">Alive的工作台</NuxtLink>
+          </a>
         </div>
         <div class="navbar-center hidden lg:flex">
           <ul class="menu menu-horizontal px-1">
             <li tabindex="0">
-              <a>
-                语言类
-              </a>
+              <NuxtLink to="/RealmDetail?realm=A">
+                <a @click="activeRealm = 'A'">语言类</a>
+              </NuxtLink>
             </li>
             <li tabindex="0">
-              <a>
-                工程类
-              </a>
+              <NuxtLink to="/RealmDetail?realm=B">
+                <a @click="activeRealm = 'B'">工程类</a>
+              </NuxtLink>
             </li>
             <li tabindex="0">
-              <a>
-                咨询类
-              </a>
+              <NuxtLink to="/RealmDetail?realm=C">
+                <a @click="activeRealm = 'C'">咨询类</a>
+              </NuxtLink>
             </li>
-            <li tabindex="0">
+            <!-- <li tabindex="0">
               <a>
                 合作衍生类
               </a>
-            </li>
+            </li> -->
             <li tabindex="0">
               <label tabindex="0" class="btn btn-ghost rounded-btn">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                   stroke="currentColor" class="w-6 h-6">
                   <path stroke-linecap="round" stroke-linejoin="round"
                     d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+                </svg>
+              </label>
+              <label tabindex="0" class="btn btn-ghost rounded-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m2.25 0H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
                 </svg>
               </label>
               <label tabindex="0" class="btn btn-ghost rounded-btn">
@@ -95,13 +116,13 @@
               <li><a @click="locale = 'en'">English</a></li>
             </ul>
           </div>
-          <label @click="modal=true" class="btn btn-primary"> 联系我</label>
+          <label @click="modal = true" class="btn btn-primary"> 联系我</label>
         </div>
       </div>
       <!-- Page content here -->
       <Hero :class="{ hidden: route.path != '/' }" />
       <RealmBoard :class="{ hidden: route.path != '/RealmBoard' }" />
-      <RealmView :class="{ hidden: route.path != '/RealmDetail' }" />
+      <RealmDetail :class="{ hidden: route.path != '/RealmDetail' }" />
       <Content :class="{ hidden: route.path != '/Content' }" />
       <ContentList :class="{ hidden: route.path != '/ContentList' }" />
     </div>
@@ -147,6 +168,7 @@
 const locale = useLocale()
 const route = useRoute()
 const modal = useModal()
+const activeRealm = useActiveRealm()
 </script>
 
 <style>

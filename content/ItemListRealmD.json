@@ -1,5 +1,10 @@
 {
   "title": "ItemListRealmD",
+  "type": "RealmItemList",
+  "realmName": "Partnered Services",
+  "realmNameCN": "合作衍生类",
+  "realmDescription": "Partnered Services",
+  "realmDescriptionCN": "合作衍生类",
   "body": [
     {
       "categoryName": "Language Learning",

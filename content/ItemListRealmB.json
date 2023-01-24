@@ -1,7 +1,10 @@
 {
   "title": "ItemListRealmB",
+  "type": "RealmItemList",
   "realmName": "Engineer",
   "realmNameCN": "工程类",
+  "realmDescription": "Engineer Description",
+  "realmDescriptionCN": "工程类的说明",
   "body": [
     {
       "categoryName": "Technical Support",

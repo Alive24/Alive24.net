@@ -28,7 +28,9 @@ const heroContent = computed(() => {
                 <p class="py-6 prose-sm text-left">{{ heroContent.intro }}</p>
                 <p class="py-6 prose-sm text-left italic">{{ heroContent.reference }}</p>
                 <div class="flex gap-x-8 justify-between">
-                    <button class="btn btn-outline">业务范围一览</button>
+                    <NuxtLink to="/RealmBoard">
+                        <button class="btn btn-outline">业务范围一览</button>
+                    </NuxtLink>
                     <button @click="modal=true" class="btn btn-primary">联系我</button>
                     <button class="btn btn-outline">了解我更多</button>
                 </div>
