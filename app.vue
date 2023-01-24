@@ -120,11 +120,7 @@
         </div>
       </div>
       <!-- Page content here -->
-      <Hero :class="{ hidden: route.path != '/' }" />
-      <RealmBoard :class="{ hidden: route.path != '/RealmBoard' }" />
-      <RealmDetail :class="{ hidden: route.path != '/RealmDetail' }" />
-      <Content :class="{ hidden: route.path != '/Content' }" />
-      <ContentList :class="{ hidden: route.path != '/ContentList' }" />
+      <NuxtPage/>
     </div>
     <div class="drawer-side">
       <label for="my-drawer-3" class="drawer-overlay"></label>

@@ -36,7 +36,7 @@
                             <article class="prose text-left">
                                 <p>{{ item.itemDescriptionCN }}</p>
                                 <div class="flex-none" :class="{ hidden: item.linkedPageTitle == '' }">
-                                    <NuxtLink target=_blank :to="`/Content?type=pages&title=${item.linkedPageTitle}`">
+                                    <NuxtLink :to="`/Content?type=pages&title=${item.linkedPageTitle}`">
                                         <button class="btn btn-sm btn-primary">了解更多</button>
                                     </NuxtLink>
                                 </div>
