@@ -4,7 +4,7 @@
   "realmName": "Engineer",
   "realmNameCN": "工程类",
   "realmDescription": "Engineer Description",
-  "realmDescriptionCN": "工程类的说明",
+  "realmDescriptionCN": "我掌握三种母语：普通话、粤语、潮汕话，并且可以书写与识别简体与繁体中文。  \n\n英语是我的主要工作语言，已达到最高C2的级别。\n\n我常年提供中粤英语言教育、翻译、以及其他语言应用服务。我很熟悉英语环境中与社会科学、科技、法律相关的内容。 \n\n我正在学习法语（A2）、日语（N4）。",
   "body": [
     {
       "categoryName": "Technical Support",
@@ -14,25 +14,33 @@
           "itemName": "Personal Support",
           "itemNameCN": "个人技术支持",
           "itemDescription": "ielts/toefl ielts/toeflielts/toeflielts/toefl",
-          "itemDescriptionCN": "雅思/托福辅导雅思/托福辅导雅思/托福辅导雅思/托福辅导"
+          "itemDescriptionCN": "雅思/托福辅导雅思/托福辅导雅思/托福辅导雅思/托福辅导",
+          "itemSnippetTitle": "",
+          "linkedPageTitle": ""
         },
         {
           "itemName": "Worksite Support",
           "itemNameCN": "工作场景支持",
           "itemDescription": "BECBECBECBECBEC",
-          "itemDescriptionCN": "剑桥商务英语辅导剑桥商务英语辅导剑桥商务英语辅导剑桥商务英语辅导"
+          "itemDescriptionCN": "剑桥商务英语辅导剑桥商务英语辅导剑桥商务英语辅导剑桥商务英语辅导",
+          "itemSnippetTitle": "",
+          "linkedPageTitle": ""
         },
         {
           "itemName": "Multimedia Support",
           "itemNameCN": "多媒体技术支持",
           "itemDescription": "teenagerEnglish",
-          "itemDescriptionCN": "青少年英语辅导青少年英语辅导青少年英语辅导青少年英语辅导"
+          "itemDescriptionCN": "青少年英语辅导青少年英语辅导青少年英语辅导青少年英语辅导",
+          "itemSnippetTitle": "",
+          "linkedPageTitle": ""
         },
         {
           "itemName": "PC DIY",
           "itemNameCN": "PC DIY组装/维护",
           "itemDescription": "teenagerEnglish",
-          "itemDescriptionCN": "青少年英语辅导青少年英语辅导青少年英语辅导青少年英语辅导"
+          "itemDescriptionCN": "青少年英语辅导青少年英语辅导青少年英语辅导青少年英语辅导",
+          "itemSnippetTitle": "",
+          "linkedPageTitle": ""
         }
       ]
     },
@@ -44,31 +52,41 @@
           "itemName": "Automation Script",
           "itemNameCN": "自动化脚本开发",
           "itemDescription": "BECBECBECBECBEC",
-          "itemDescriptionCN": "剑桥商务英语辅导剑桥商务英语辅导剑桥商务英语辅导剑桥商务英语辅导"
+          "itemDescriptionCN": "剑桥商务英语辅导剑桥商务英语辅导剑桥商务英语辅导剑桥商务英语辅导",
+          "itemSnippetTitle": "",
+          "linkedPageTitle": ""
         },
         {
           "itemName": "Desktop Software",
           "itemNameCN": "桌面软件开发",
           "itemDescription": "BECBECBECBECBEC",
-          "itemDescriptionCN": "剑桥商务英语辅导剑桥商务英语辅导剑桥商务英语辅导剑桥商务英语辅导"
+          "itemDescriptionCN": "剑桥商务英语辅导剑桥商务英语辅导剑桥商务英语辅导剑桥商务英语辅导",
+          "itemSnippetTitle": "",
+          "linkedPageTitle": ""
         },
         {
           "itemName": "Website Development",
           "itemNameCN": "网站（前端、后端）开发",
           "itemDescription": "BECBECBECBECBEC",
-          "itemDescriptionCN": "剑桥商务英语辅导剑桥商务英语辅导剑桥商务英语辅导剑桥商务英语辅导"
+          "itemDescriptionCN": "剑桥商务英语辅导剑桥商务英语辅导剑桥商务英语辅导剑桥商务英语辅导",
+          "itemSnippetTitle": "",
+          "linkedPageTitle": ""
         },
         {
           "itemName": "Interactive Mechanical Artwork",
           "itemNameCN": "交互式艺术工控开发",
           "itemDescription": "BECBECBECBECBEC",
-          "itemDescriptionCN": "剑桥商务英语辅导剑桥商务英语辅导剑桥商务英语辅导剑桥商务英语辅导"
+          "itemDescriptionCN": "剑桥商务英语辅导剑桥商务英语辅导剑桥商务英语辅导剑桥商务英语辅导",
+          "itemSnippetTitle": "",
+          "linkedPageTitle": ""
         },
         {
           "itemName": "IoT DIY",
           "itemNameCN": "物联网DIY开发",
           "itemDescription": "BECBECBECBECBEC",
-          "itemDescriptionCN": "剑桥商务英语辅导剑桥商务英语辅导剑桥商务英语辅导剑桥商务英语辅导"
+          "itemDescriptionCN": "剑桥商务英语辅导剑桥商务英语辅导剑桥商务英语辅导剑桥商务英语辅导",
+          "itemSnippetTitle": "",
+          "linkedPageTitle": ""
         }
       ]
     },
@@ -80,7 +98,9 @@
           "itemName": "STEM Course Development and Instruction",
           "itemNameCN": "STEM类课程开发与授课",
           "itemDescription": "BECBECBECBECBEC",
-          "itemDescriptionCN": "剑桥商务英语辅导剑桥商务英语辅导剑桥商务英语辅导剑桥商务英语辅导"
+          "itemDescriptionCN": "剑桥商务英语辅导剑桥商务英语辅导剑桥商务英语辅导剑桥商务英语辅导",
+          "itemSnippetTitle": "",
+          "linkedPageTitle": ""
         }
       ]
     }

@@ -2,12 +2,14 @@
     <div v-for="realmContent in realmContentList" :key="realmContent.title">
         <div class="container mx-auto py-10 px-5 xl:max-w-7xl" :class="{ hidden: contentTitle != realmContent.title }">
             <div class="card lg:card-side bg-base-100 shadow-xl ">
-                <figure><img src="https://placeimg.com/400/400/arch" alt="Album" /></figure>
+                <figure><img class="h-full" src="https://placeimg.com/1000/1000/arch" alt="Album" /></figure>
                 <div class="card-body">
                     <h2 class="card-title">{{ realmContent.realmNameCN }}</h2>
-                    <article class="prose whitespace-pre-wrap h-52">{{ realmContent.realmDescriptionCN }}</article>
+                    <p class="prose max-w-none whitespace-pre-wrap lg:h-64 flex flex-wrap">{{
+                        realmContent.realmDescriptionCN
+                    }}</p>
                     <div class="card-actions justify-start">
-                        <div class="hidden h-52 w-10/12 lg:flex gap-y-2 gap-x-2 flex-wrap w-full">
+                        <div class="hidden h-72 w-10/12 lg:flex gap-y-2 gap-x-2 flex-wrap w-full">
                             <div v-for="category in realmContent.body" :key="category.categoryName"
                                 class="card rounded-box place-items-start">
                                 <h3 class="prose text-left">{{ category.categoryNameCN }}</h3>
@@ -35,6 +37,7 @@
                         <div class="collapse-content">
                             <article class="prose text-left">
                                 <p>{{ item.itemDescriptionCN }}</p>
+                                <ContentDoc :path="`/snippets/${item.itemSnippetTitle}`" />
                                 <div class="flex-none" :class="{ hidden: item.linkedPageTitle == '' }">
                                     <NuxtLink :to="`/Content?type=pages&title=${item.linkedPageTitle}`">
                                         <button class="btn btn-sm btn-primary">了解更多</button>
@@ -62,12 +65,7 @@ const contentTitle = computed(() => {
     else { return '' }
 })
 const realmContentList = activeRealm ? await queryContent()?.where({ type: "RealmItemList", }).find() : ""
-const getNuxtLinkToLinkedPage = (linkedPageTitle) => {
-    if (linkedPageTitle == "") { return }
-    else {
-        return `<NuxtLink to="/Content?type=pages&title=${linkedPageTitle}">
-            <button class="btn btn-sm btn-primary">了解更多</button>
-        </NuxtLink>`}
-
-}
+// const getItemSnippetContent = async (itemSnippetTitle) => {
+//     return itemSnippetTitle ? await queryContent(`/snippets`)?.where({ title: itemSnippetTitle }).find() : ""
+// }
 </script>

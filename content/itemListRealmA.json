@@ -4,7 +4,7 @@
   "realmName": "Language",
   "realmNameCN": "语言类",
   "realmDescription": "Language Description",
-  "realmDescriptionCN": "我掌握三种母语：普通话、粤语、潮汕话，并且可以书写与识别简体与繁体中文。  \n\n英语是我的主要工作语言，已达到C2级别。我常年提供中粤英语言教育、翻译、以及其他语言应用服务。 \n\n我正在学习法语（A2）、日语（N4）。",
+  "realmDescriptionCN": "我掌握三种母语：普通话、粤语、潮汕话，并且可以书写与识别简体与繁体中文。  \n\n英语是我的主要工作语言，已达到最高C2的级别。\n\n我常年提供中粤英语言教育、翻译、以及其他语言应用服务。我很熟悉英语环境中与社会科学、科技、法律相关的内容。 \n\n我正在学习法语（A2）、日语（N4）。",
   "body": [
     {
       "categoryName": "Language Learning",
@@ -12,9 +12,10 @@
       "items": [
         {
           "itemName": "IELTS/TOEFL",
-          "itemNameCN": "雅思/托福辅导",
+          "itemNameCN": "雅思辅导",
           "itemDescription": "ielts/toefl ielts/toeflielts/toeflielts/toefl",
           "itemDescriptionCN": "遵循CEFR框架，扎实提升英语能力。小班/一对一教学，量身订造学习体验。",
+          "itemSnippetTitle": "ielts",
           "linkedPageTitle": "学英语，从CEFR开始"
         },
         {
@@ -22,6 +23,7 @@
           "itemNameCN": "剑桥商务英语辅导",
           "itemDescription": "BECBECBECBECBEC",
           "itemDescriptionCN": "剑桥商务英语辅导剑桥商务英语辅导剑桥商务英语辅导剑桥商务英语辅导",
+          "itemSnippetTitle": "bec",
           "linkedPageTitle": ""
         },
         {
@@ -29,6 +31,7 @@
           "itemNameCN": "青少年英语辅导",
           "itemDescription": "teenagerEnglish",
           "itemDescriptionCN": "青少年英语辅导青少年英语辅导青少年英语辅导青少年英语辅导",
+          "itemSnippetTitle": "",
           "linkedPageTitle": ""
         }
       ]
@@ -42,6 +45,7 @@
           "itemNameCN": "中英书面翻译",
           "itemDescription": "BECBECBECBECBEC",
           "itemDescriptionCN": "剑桥商务英语辅导剑桥商务英语辅导剑桥商务英语辅导剑桥商务英语辅导",
+          "itemSnippetTitle": "",
           "linkedPageTitle": ""
         },
         {
@@ -49,6 +53,7 @@
           "itemNameCN": "中英交替传译（线上/线下）",
           "itemDescription": "BECBECBECBECBEC",
           "itemDescriptionCN": "剑桥商务英语辅导剑桥商务英语辅导剑桥商务英语辅导剑桥商务英语辅导",
+          "itemSnippetTitle": "",
           "linkedPageTitle": ""
         },
         {
@@ -56,6 +61,7 @@
           "itemNameCN": "中英通信代笔",
           "itemDescription": "BECBECBECBECBEC",
           "itemDescriptionCN": "剑桥商务英语辅导剑桥商务英语辅导剑桥商务英语辅导剑桥商务英语辅导",
+          "itemSnippetTitle": "",
           "linkedPageTitle": ""
         },
         {
@@ -63,6 +69,7 @@
           "itemNameCN": "双语字幕译制",
           "itemDescription": "BECBECBECBECBEC",
           "itemDescriptionCN": "剑桥商务英语辅导剑桥商务英语辅导剑桥商务英语辅导剑桥商务英语辅导",
+          "itemSnippetTitle": "",
           "linkedPageTitle": ""
         }
       ]
@@ -76,6 +83,7 @@
           "itemNameCN": "学术英语指导",
           "itemDescription": "BECBECBECBECBEC",
           "itemDescriptionCN": "剑桥商务英语辅导剑桥商务英语辅导剑桥商务英语辅导剑桥商务英语辅导",
+          "itemSnippetTitle": "",
           "linkedPageTitle": ""
         },
         {
@@ -83,6 +91,7 @@
           "itemNameCN": "法律英语指导",
           "itemDescription": "BECBECBECBECBEC",
           "itemDescriptionCN": "剑桥商务英语辅导剑桥商务英语辅导剑桥商务英语辅导剑桥商务英语辅导",
+          "itemSnippetTitle": "",
           "linkedPageTitle": ""
         },
         {
@@ -90,6 +99,7 @@
           "itemNameCN": "文书撰写指导",
           "itemDescription": "BECBECBECBECBEC",
           "itemDescriptionCN": "剑桥商务英语辅导剑桥商务英语辅导剑桥商务英语辅导剑桥商务英语辅导",
+          "itemSnippetTitle": "",
           "linkedPageTitle": ""
         },
         {
@@ -97,6 +107,7 @@
           "itemNameCN": "口语面试指导",
           "itemDescription": "BECBECBECBECBEC",
           "itemDescriptionCN": "剑桥商务英语辅导剑桥商务英语辅导剑桥商务英语辅导剑桥商务英语辅导",
+          "itemSnippetTitle": "",
           "linkedPageTitle": ""
         },
         {
@@ -104,6 +115,7 @@
           "itemNameCN": "配音（英语、粤语、潮汕话）",
           "itemDescription": "BECBECBECBECBEC",
           "itemDescriptionCN": "剑桥商务英语辅导剑桥商务英语辅导剑桥商务英语辅导剑桥商务英语辅导",
+          "itemSnippetTitle": "",
           "linkedPageTitle": ""
         }
       ]
