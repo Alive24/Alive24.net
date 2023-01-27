@@ -2,7 +2,23 @@
 module.exports = {
   content: [],
   theme: {
-    extend: {},
+    extend: {
+      typography: {
+        DEFAULT: {
+          css: {
+            'blockquote:after': {
+              'content': ""
+            },
+            'blockquote:before': {
+              "content": ""
+            },
+            '.blockquote': {
+              "quotes": "none"
+            }
+          },
+        },
+      },
+    },
   },
   daisyui: {
     themes: [
