@@ -1,16 +1,15 @@
 <template>
-    <div v-for="realmContent in realmContentList" :key="realmContent.title">
-        <div class="container mx-auto py-10 px-5 xl:max-w-7xl" :class="{ hidden: contentTitle != realmContent.title }">
+    <div>
+        <div class="container mx-auto py-10 px-5 xl:max-w-7xl">
             <div class="card lg:card-side bg-base-100 shadow-xl ">
-                <figure><img class="h-full" src="https://placeimg.com/1000/1000/arch" alt="Album" /></figure>
+                <figure><img class="h-full" src="/image/Shimakaze-Yuubari.png" alt="Album" /></figure>
                 <div class="card-body">
-                    <h2 class="card-title">{{ realmContent.realmNameCN }}</h2>
+                    <h2 class="card-title">{{ " Yes!"}}</h2>
                     <p class="prose max-w-none whitespace-pre-wrap lg:h-64 flex flex-wrap">{{
-                        realmContent.realmDescriptionCN
                     }}</p>
                     <div class="card-actions justify-start">
                         <div class="hidden h-72 w-10/12 lg:flex gap-y-2 gap-x-2 flex-wrap w-full">
-                            <div v-for="category in realmContent.body" :key="category.categoryName"
+                            <!-- <div v-for="category in realmContent.body" :key="category.categoryName"
                                 class="card rounded-box place-items-start">
                                 <h3 class="prose text-left">{{ category.categoryNameCN }}</h3>
                                 <div class="gap-y-2 gap-x-2 flex flex-wrap w-full ">
@@ -19,12 +18,12 @@
                                         :class="{ 'btn-outline': activeItem != item.itemName }"
                                         class="btn btn-primary btn-sm">{{ item.itemNameCN }}</button>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
             </div>
-            <div v-for="category in realmContent.body" :key="category.categoryName"
+            <!-- <div v-for="category in realmContent.body" :key="category.categoryName"
                 class="card my-5 bg-base-100 shadow-xl">
                 <div class="card-body">
                     <h2 class="card-title">{{ category.categoryNameCN }}</h2>
@@ -47,7 +46,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 </template>

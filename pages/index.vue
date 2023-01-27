@@ -31,8 +31,10 @@ const heroContent = computed(() => {
                     <NuxtLink to="/RealmBoard">
                         <button class="btn btn-outline">业务范围一览</button>
                     </NuxtLink>
-                    <button @click="modal=true" class="btn btn-primary">联系我</button>
-                    <button class="btn btn-outline">了解我更多</button>
+                    <button @click="modal = true" class="btn btn-primary">联系我</button>
+                    <NuxtLink to="/About">
+                        <button class="btn btn-outline">了解我更多</button>
+                    </NuxtLink>
                 </div>
             </div>
         </div>

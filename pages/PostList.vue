@@ -1,5 +1,4 @@
 <script setup>
-const { data: PagesNavigation } = await useAsyncData('navigation', () => fetchContentNavigation('/pages'))
 const { data: PostsNavigation } = await useAsyncData('navigation', () => fetchContentNavigation('/posts'))
 </script>
 
