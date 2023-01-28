@@ -1,10 +1,11 @@
 {
   "title": "ItemListRealmA",
   "type": "RealmItemList",
+  "realmHero": "/image/Kongou.png",
   "realmName": "Language",
   "realmNameCN": "语言类",
   "realmDescription": "Language Description",
-  "realmDescriptionCN": "我掌握三种母语：普通话、粤语、潮汕话，并且可以书写与识别简体与繁体中文。  \n\n英语是我的主要工作语言，已达到最高C2的级别。\n\n我常年提供线上与线下中粤英语言教育、书面翻译、口语翻译、文书撰写指导等各种其他语言应用服务。我尤其熟悉英语环境中与社会科学、科技、法律相关的内容。 \n\n同时我也正在学习法语（A2）、日语（N4）。",
+  "realmDescriptionCN": "我掌握三种母语：普通话、粤语、潮汕话，并且可以书写与识别简体与繁体中文。  \n\n英语是我的主要工作语言，已达到最高的C2级别。\n\n我常年提供线上与线下中粤英语言教育、书面翻译、口语翻译、文书撰写指导等各种其他语言应用服务。我尤其熟悉英语环境中与社会科学、科技、法律相关的内容。 \n\n同时我也正在学习法语（A2）、日语（N4）。",
   "body": [
     {
       "categoryName": "Language Learning",

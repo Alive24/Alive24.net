@@ -1,6 +1,7 @@
 {
   "title": "ItemListRealmD",
   "type": "RealmItemList",
+  "realmHero": "/image/Shimakaze-Yuubari.png",
   "realmName": "Partnered Services",
   "realmNameCN": "合作衍生类",
   "realmDescription": "Partnered Services",

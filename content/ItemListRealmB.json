@@ -1,6 +1,7 @@
 {
   "title": "ItemListRealmB",
   "type": "RealmItemList",
+  "realmHero": "/image/Shimakaze-Yuubari.png",
   "realmName": "Engineer",
   "realmNameCN": "工程类",
   "realmDescription": "Engineer Description",
