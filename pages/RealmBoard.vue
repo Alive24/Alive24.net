@@ -74,7 +74,9 @@ const isHidden = computed(() => {
                                                         <h4>{{ realmAToastObject?.itemNameCN || ''}}</h4>
                                                         <p>{{ realmAToastObject?.itemDescriptionCN || ''}} </p>
                                                         <div class="flex-none">
-                                                            <button class="btn btn-sm btn-primary">了解更多</button>
+                                                            <NuxtLink :to="`/RealmDetail?realm=A#${activeItemRealmA}`">
+                                                                <button class="btn btn-sm btn-primary">了解更多</button>
+                                                            </NuxtLink>
                                                         </div>
                                                     </article>
                                                 </div>
@@ -114,7 +116,9 @@ const isHidden = computed(() => {
                                                         <h4>{{ realmBToastObject?.itemNameCN || ''}}</h4>
                                                         <p>{{ realmBToastObject?.itemDescriptionCN || ''}} </p>
                                                         <div class="flex-none">
-                                                            <button class="btn btn-sm btn-primary">了解更多</button>
+                                                            <NuxtLink :to="`/RealmDetail?realm=B#${activeItemRealmB}`">
+                                                                <button class="btn btn-sm btn-primary">了解更多</button>
+                                                            </NuxtLink>
                                                         </div>
                                                     </article>
                                                 </div>
@@ -154,7 +158,9 @@ const isHidden = computed(() => {
                                                         <h4>{{ realmCToastObject?.itemNameCN || ''}}</h4>
                                                         <p>{{ realmCToastObject?.itemDescriptionCN || ''}} </p>
                                                         <div class="flex-none">
-                                                            <button class="btn btn-sm btn-primary">了解更多</button>
+                                                            <NuxtLink :to="`/RealmDetail?realm=C#${activeItemRealmC}`">
+                                                                <button class="btn btn-sm btn-primary">了解更多</button>
+                                                            </NuxtLink>
                                                         </div>
                                                     </article>
                                                 </div>

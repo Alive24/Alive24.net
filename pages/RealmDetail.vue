@@ -27,11 +27,14 @@
             <div v-for="category in realmContent.body" :key="category.categoryName"
                 class="card my-5 bg-base-100 shadow-xl">
                 <div class="card-body">
-                    <h2 class="card-title">{{ category.categoryNameCN }}</h2>
+                    <h2 :id='`${category.categoryName}`' class="card-title">{{ category.categoryNameCN }}</h2>
                     <div v-for="item in category.items" :key="item.itemName" tabindex="0"
-                        class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box px-2">
-                        <input type="checkbox" />
-                        <div class="collapse-title font-bold">
+                        class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box px-2"
+                        :class="{'collapse-open': route.hash == `#${item.itemName}`}"
+                        >
+                        <!-- ToDo: :class not working. Wish to expand it if accessed through hash -->
+                        <input type="checkbox"/>
+                        <div :id='`${item.itemName}`' class="collapse-title font-bold">
                             {{ item.itemNameCN }}
                         </div>
                         <div class="collapse-content">
