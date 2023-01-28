@@ -4,7 +4,7 @@
   "realmName": "Engineer",
   "realmNameCN": "工程类",
   "realmDescription": "Engineer Description",
-  "realmDescriptionCN": "我掌握三种母语：普通话、粤语、潮汕话，并且可以书写与识别简体与繁体中文。  \n\n英语是我的主要工作语言，已达到最高C2的级别。\n\n我常年提供中粤英语言教育、翻译、以及其他语言应用服务。我很熟悉英语环境中与社会科学、科技、法律相关的内容。 \n\n我正在学习法语（A2）、日语（N4）。",
+  "realmDescriptionCN": "我擅长提供技术支持，帮助客户解决各种问题，满足各种需求。无论是个人生活、艺术创作，还是工作情境需要，我都能提供专业、实用、经济的意见与服务。  \n\n同时我亦是一名兴趣使然且充满创造力的程序员：熟练掌握JavaScript（Vue 3 + Nuxt 3），Python， MicroPython，在Web前后端开发、脚本开发、桌面软件开发、单片机开发、运维、二次开发等领域都有过大量的经验。我也热衷于学习各种新鲜且具有革命性的技术栈，例如我目前正在学习Rust和Neo4j Graph数据库等。 \n\n此外，我还有扎实的统计学基础，并且正在学习更多数据科学相关的内容。我还具有大量STEM教育相关的经历，并且擅长点燃学生们的好奇心。\n ",
   "body": [
     {
       "categoryName": "Technical Support",

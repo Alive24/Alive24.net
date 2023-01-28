@@ -15,7 +15,6 @@ const { data: PagesNavigation } = await useAsyncData('navigation', () => fetchCo
                             <!-- <span class="prose-sm lg:prose-xl font-light w-40 text-right " >{{ doc.head.meta.find((item) => item.name == "date").content }}</span> -->
                         </h2>
                     </NuxtLink>
-
                     <ContentRenderer class="prose max-w-none prose-sm" excerpt :value="doc" />
                     <NuxtLink :to="`/Content?type=pages&title=${doc.title}`">
                         <div class="absolute inset-x-0 px-3 bottom-0 divider">阅读更多</div>

@@ -4,17 +4,20 @@
             <div class="container mx-auto py-10 px-5 xl:max-w-7xl"
                 :class="{ hidden: contentTitle != realmContent.title }">
                 <div class="card lg:card-side bg-base-100 shadow-xl ">
-                    <figure><img class="h-full" src="/image/Shimakaze-Yuubari.png" alt="Album" /></figure>
-                    <div class="card-body">
+                    <figure>
+                        <img class="h-full" src="/image/Shimakaze-Yuubari.png" alt="Album" />
+                        <!-- ToDo: Width should be relatively fixed -->
+                    </figure>
+                    <div class="card-body w-5/6">
                         <h2 class="card-title">{{ realmContent.realmNameCN }}</h2>
                         <p class="prose max-w-none whitespace-pre-wrap lg:h-64 flex flex-wrap">{{
                             realmContent.realmDescriptionCN
                         }}</p>
                         <div class="card-actions justify-start">
-                            <div class="hidden h-72 w-10/12 lg:flex gap-y-2 gap-x-2 flex-wrap w-full">
+                            <div class="hidden h-72 w-10/12 lg:flex gap-y-2 gap-x-2 flex-wrap w-5/6 bottom-0">
                                 <div v-for="category in realmContent.body" :key="category.categoryName"
-                                    class="card rounded-box place-items-start">
-                                    <h3 class="prose text-left">{{ category.categoryNameCN }}</h3>
+                                    class="bottom-0 card rounded-box place-items-start">
+                                    <h3 class="prose text-left font-bold">{{ category.categoryNameCN }}</h3>
                                     <div class="gap-y-2 gap-x-2 flex flex-wrap w-full ">
                                         <NuxtLink v-for="item in category.items" :key="item.itemName"
                                             :to="{ path: `/RealmDetail?`, query: { realm: activeRealm }, hash: `#${item.itemName}` }">
