@@ -147,7 +147,7 @@
             tabindex="0"
             class="hidden swap swap-rotate btn btn-ghost rounded-btn"
           >
-            <!-- ToDo: Hidden here for the dark mode switch to be implemented -->
+            <!-- ToDo: Hidden here for the dark mode switch to be implemented: https://color-mode.nuxtjs.org/-->
             <!-- this hidden checkbox controls the state -->
             <input type="checkbox" />
             <!-- sun icon -->
@@ -294,6 +294,16 @@ const activeRealm = useActiveRealm();
 </script>
 
 <style>
+.page-enter-active,
+.page-leave-active {
+  transition: all 0.4s;
+}
+.page-enter-from,
+.page-leave-to {
+  opacity: 0;
+  filter: blur(1rem);
+}
+
 body {
   font-family: Helvetica, Tahoma, Arial, "PingFang SC", "Hiragino Sans GB",
     "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei";

@@ -1,5 +1,11 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+    app: {
+        head: {
+            title:'Alive的工作台'
+        },
+        pageTransition: { name: 'page', mode: 'out-in' }
+    },
     modules: ['@nuxtjs/tailwindcss', '@nuxtjs/i18n', '@nuxt/content'],
     i18n: {
         vueI18n: {
@@ -18,5 +24,8 @@ export default defineNuxtConfig({
     },
     content: {
         // https://content.nuxtjs.org/api/configuration
+    },
+    router: {
+        
     }
 })
