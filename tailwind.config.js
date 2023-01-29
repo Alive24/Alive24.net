@@ -33,7 +33,7 @@ module.exports = {
               "quotes": "none"
             },
             'code': {
-              "color": "#b4d6fa",
+              "color": "#b4d6fa !important",
               "background-color": "#25313f",
               "border-radius": "0.375rem !important"
           }

@@ -5,11 +5,7 @@
             <div class="card-body px-5 mx-auto">
                 <article class="prose ">
                     <h1>{{ content.title }}</h1>
-                    <div class="flex flex-wrap" v-for="item in content.head.meta" :key="item.name">
-                        <!-- To-Do: Beautify the metas -->
-                        <span>{{ item.name }}</span>
-                        <span>{{ item.content }}</span>
-                    </div>
+                    <MetaRenderer class="not-prose" :meta="content.head.meta"/>
                     <ContentRenderer :value="content" />
                     <div class="card-actions justify-end">
                         <div class="hidden lg:flex gap-y-2 gap-x-2 flex-wrap w-full">
