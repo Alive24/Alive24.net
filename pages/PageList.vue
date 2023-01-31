@@ -4,7 +4,7 @@ const { data: PagesNavigation } = await useAsyncData('navigation', () => fetchCo
 
 
 <template>
-    <div class="mx-auto flex flex-wrap px-3 mt-20 gap-10 justify-between">
+    <div class="mx-auto flex flex-wrap px-3 mt-10 lg:mt-20 gap-10 lg:justify-between pb-10">
         <div v-for="page in PagesNavigation[0].children" :key="page.title" class="card w-96 bg-base-100 shadow-xl">
             <figure><img src="https://placeimg.com/400/225/arch" alt="Shoes" /></figure>
             <div class="card-body">

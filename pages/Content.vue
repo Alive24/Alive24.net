@@ -1,7 +1,7 @@
 <template>
-    <div class="container mx-auto py-5 px-5">
-        <div class="card mx-auto max-w-screen-lg bg-base-100 shadow-xl">
-            <figure class="px-5 pt-5"><img src="https://placeimg.com/400/400/arch" alt="Album" /></figure>
+    <div class="container mx-auto py-5 px-3">
+        <div class="card mx-auto max-w-screen-lg bg-base-100 shadow-xl ">
+            <figure class="px-5 pt-5 "><img class="rounded-lg" src="https://placeimg.com/400/400/arch" alt="Album" /></figure>
             <div class="card-body px-5 mx-auto">
                 <article class="prose ">
                     <h1>{{ content.title }}</h1>

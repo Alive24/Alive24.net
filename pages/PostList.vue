@@ -12,7 +12,7 @@ const { data: PostsNavigation } = await useAsyncData('navigation', () => fetchCo
             </div>
         </div>
         <div v-for="post in PostsNavigation[0].children" :key="post.title"
-            class="card mx-auto max-w-screen-lg bg-base-100 shadow-xl my-5 ">
+            class="card mx-auto max-w-screen-lg bg-base-100 shadow-xl my-5">
             <div class="card-body">
                 <ContentDoc v-slot="{ doc }"   :path="`${post._path}`">
                     <NuxtLink :to="`/Content?type=posts&title=${doc.title}`">

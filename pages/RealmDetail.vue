@@ -44,7 +44,7 @@
                             <div class="collapse-content">
                                 <article class="prose text-left">
                                     <p>{{ item.itemDescriptionCN }}</p>
-                                    <ContentDoc v-slot="{ doc }" :path="`/snippets/${item.itemSnippetTitle}`">
+                                    <ContentDoc v-if="item.itemSnippet != ''" v-slot="{ doc }" :path="`/snippets/${item.itemSnippetTitle}`">
                                         <ContentRenderer class="prose max-w-none prose-sm" :value="doc" />
                                     </ContentDoc>
                                     <div class="flex-none" :class="{ hidden: item.linkedPageTitle == '' }">
