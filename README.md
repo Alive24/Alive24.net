@@ -1,42 +1,24 @@
-# Nuxt 3 Minimal Starter
+# Alive24.net
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+本站立项于2023-01-07，使用`Vue 3` + `Nuxt 3` + `DaisyUI` + `TailwindCSS`开发，作为我的个人网站，用于支持我的自由职业者生涯发展（包括展示业务、更新动态），以及发布我的写作内容。
 
-## Setup
+## 运维 DevOps
+- 本站为全静态。为了未来可能接入国内公众号提前进行备案，并进行了境内境外分流。
+- 境外站点使用Vercel直接根据commit构建，境内计划使用`Jenkins` + `Docker`自动部署，或使用OSS。
 
-Make sure to install the dependencies:
 
-```bash
-# yarn
-yarn install
+## ToDo：
+### Dev
+1. 2023-02-02
+    - [] 处理所有报错。
+    - [] Post与Page内容分类标签过滤
+    - [] 关于页面的Sections部分
+    - [] 配图部分
 
-# npm
-npm install
 
-# pnpm
-pnpm install --shamefully-hoist
-```
+### Content
+1. 2023-02-02
+    - [] 更新联系信息。
+    - [] 更新关于页面。
+    - [] 更新已有文章配图
 
-## Development Server
-
-Start the development server on http://localhost:3000
-
-```bash
-npm run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-npm run build
-```
-
-Locally preview production build:
-
-```bash
-npm run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.

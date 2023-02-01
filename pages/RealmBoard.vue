@@ -48,15 +48,15 @@ const realmDToastObject = computed(() => {
     }
 })
 const route = useRoute()
-const isHidden = computed(() => {
-    if (route.path == '/RealmBoard') { return false }
-    else {return true}
-})
+// const isHidden = computed(() => {
+//     if (route.path == '/RealmBoard') { return false }
+//     else {return true}
+// })
 </script>
 
 
 <template>
-    <div class="hero" :class="{hidden: isHidden}">
+    <div class="hero">
         <div class="hero-content text-center">
             <div class="mt-15 flex flex-wrap">
                 <div class="gap-x-8 gap-y-8 flex flex-wrap w-full lg:flex-row">

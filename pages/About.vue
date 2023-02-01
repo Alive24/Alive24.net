@@ -2,11 +2,15 @@
     <div>
         <div class="container mx-auto py-10 px-5 xl:max-w-7xl">
             <div class="card lg:card-side bg-base-100 shadow-xl ">
-                <figure><img class="h-full" src="/image/Shimakaze-Yuubari.png" alt="Album" /></figure>
-                <div class="card-body">
-                    <h2 class="card-title">{{ " Yes!"}}</h2>
-                    <p class="prose max-w-none whitespace-pre-wrap lg:h-64 flex flex-wrap">{{
-                    }}</p>
+                <figure class="lg:w-2/5">
+                    <img class="h-full rounded-full lg:rounded p-10 lg:p-0" src="/image/Profile.jpg" alt="Album" />
+                </figure>
+                <div class="card-body lg:w-5/6">
+                    <!-- <p class="prose max-w-none whitespace-pre-wrap lg:h-64 flex flex-wrap">{{
+                    }}</p> -->
+                    <ContentDoc v-slot="{ doc }" :path="`/about/about`">
+                        <ContentRenderer class="prose max-w-none prose" :value="doc" />
+                    </ContentDoc>
                     <div class="card-actions justify-start">
                         <div class="hidden h-72 w-10/12 lg:flex gap-y-2 gap-x-2 flex-wrap w-full">
                             <!-- <div v-for="category in realmContent.body" :key="category.categoryName"

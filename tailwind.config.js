@@ -34,7 +34,7 @@ module.exports = {
             },
             'code': {
               "color": "#b4d6fa !important",
-              "background-color": "#25313f",
+              "background-color": "#25313f !important",
               "border-radius": "0.375rem !important"
           }
         },

@@ -32,7 +32,6 @@
                 </div>
                 <div v-for="category in realmContent.body" :key="category.categoryName"
                     class="card my-5 bg-base-100 shadow-xl">
-                    <!-- ToDo: Switch to tab style on mobile to increase view width -->
                     <div class="card-body">
                         <h2 :id='`${category.categoryName}`' class="card-title">{{ category.categoryNameCN }}</h2>
                         <div v-for="item in category.items" :key="item.itemName" tabindex="0"
@@ -44,13 +43,14 @@
                             <div class="collapse-content">
                                 <article class="prose text-left">
                                     <p>{{ item.itemDescriptionCN }}</p>
-                                    <ContentDoc v-if="item.itemSnippet != ''" v-slot="{ doc }" :path="`/snippets/${item.itemSnippetTitle}`">
+                                    <ContentDoc v-if="item.itemSnippetTitle != ''" v-slot="{ doc }" :path="`/snippets/${item.itemSnippetTitle}`">
                                         <ContentRenderer class="prose max-w-none prose-sm" :value="doc" />
                                     </ContentDoc>
-                                    <div class="flex-none" :class="{ hidden: item.linkedPageTitle == '' }">
+                                    <div v-if="item.linkedPageTitle != ''" class="flex-none">
                                         <NuxtLink :to="`/Content?type=pages&title=${item.linkedPageTitle}`">
                                             <button class="btn btn-sm btn-primary">了解更多</button>
                                         </NuxtLink>
+                                        <!-- ToDo: Make a list of recommended reading -->
                                     </div>
                                 </article>
                             </div>
@@ -72,9 +72,9 @@ onMounted(() => {
     activeItem.value = useRoute().hash || ""
     if (activeItem.value != "") {
         console.log("scrolling!", activeItem.value.substring(1, activeItem.value.length))
-        onClickItem(activeItem.value.substring(1, activeItem.value.length))
+        // onClickItem(activeItem.value.substring(1, activeItem.value.length))
     }
-    // 希望这里能直接用链接点进来之后跳到id
+    // ToDo: 希望这里能直接用链接点进来之后跳到id
 })
 const contentTitle = computed(() => {
     if (route.path == '/RealmDetail') { return `ItemListRealm${activeRealm.value}` }
@@ -87,5 +87,6 @@ const realmContentList = activeRealm ? await queryContent()?.where({ type: "Real
 
 function onClickItem(itemName) {
     document.getElementById(itemName).scrollIntoView()
+    // ToDo: 应当同时使对应的collapse content展开
 }
 </script>

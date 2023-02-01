@@ -1,9 +1,9 @@
 <template>
     <div class="container mx-auto py-5 px-3">
         <div class="card mx-auto max-w-screen-lg bg-base-100 shadow-xl ">
-            <figure class="px-5 pt-5 "><img class="rounded-lg" src="https://placeimg.com/400/400/arch" alt="Album" /></figure>
+            <figure class="px-5 pt-5 "><img class="rounded-lg lg:w-1/2" :src="content.image.src" alt="Album" /></figure>
             <div class="card-body px-5 mx-auto">
-                <article class="prose ">
+                <article class="prose">
                     <h1>{{ content.title }}</h1>
                     <MetaRenderer class="not-prose" :meta="content.head.meta"/>
                     <ContentRenderer :value="content" />

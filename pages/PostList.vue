@@ -15,6 +15,7 @@ const { data: PostsNavigation } = await useAsyncData('navigation', () => fetchCo
             class="card mx-auto max-w-screen-lg bg-base-100 shadow-xl my-5">
             <div class="card-body">
                 <ContentDoc v-slot="{ doc }"   :path="`${post._path}`">
+                    <figure class="px-0 py-5 lg:pb-10"><img class="rounded-lg lg:w-1/2" :src="doc.image.src" alt="Album" /></figure>
                     <NuxtLink :to="`/Content?type=posts&title=${doc.title}`">
                         <h2 class="prose-2xl font-bold max-w-none flex justify-between gap-2 items-center">
                             {{ doc.title }}
