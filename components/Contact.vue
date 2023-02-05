@@ -184,6 +184,7 @@
                         fill="#fff" />
                 </svg>
             </NuxtLink>
+            <!-- Patreon -->
             <NuxtLink to="https://patreon.com/alive24?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=creatorshare_creator&utm_content=join_link" class="btn btn-link">
                 <svg width="64px" height="64px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
                     <path cx="512" cy="512" r="512" style="fill:#ff424d"

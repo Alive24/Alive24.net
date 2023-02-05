@@ -1,5 +1,8 @@
 <script setup>
 const { data: PostsNavigation } = await useAsyncData('navigation', () => fetchContentNavigation('/posts'))
+useHead({
+  title: '文章列表',
+})
 </script>
 
 <template>
@@ -16,7 +19,7 @@ const { data: PostsNavigation } = await useAsyncData('navigation', () => fetchCo
         <div v-for="post in PostsNavigation[0].children" :key="post.title"
             class="card mx-auto max-w-screen-lg bg-base-100 shadow-xl my-5">
             <div class="card-body">
-                <ContentDoc v-slot="{ doc }" :path="`${post._path}`">
+                <ContentDoc v-slot="{ doc }" :path="`${post._path}`" :head=false>
                     <NuxtLink :to="`/Content?type=posts&title=${doc.title}`">
                         <figure class="px-0 py-5 lg:pb-10"><img class="rounded-lg lg:w-1/2" :src="doc.image.src"
                                 alt="Album" /></figure>

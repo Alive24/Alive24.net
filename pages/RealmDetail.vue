@@ -43,7 +43,7 @@
                             <div class="collapse-content">
                                 <article class="prose text-left">
                                     <p>{{ item.itemDescriptionCN }}</p>
-                                    <ContentDoc v-if="item.itemSnippetTitle != ''" v-slot="{ doc }" :path="`/snippets/${item.itemSnippetTitle}`">
+                                    <ContentDoc :head=false v-if="item.itemSnippetTitle != ''" v-slot="{ doc }" :path="`/snippets/${item.itemSnippetTitle}`">
                                         <ContentRenderer class="prose max-w-none prose-sm" :value="doc" />
                                     </ContentDoc>
                                     <div v-if="item.linkedPageTitle != ''" class="flex-none">
@@ -89,4 +89,8 @@ function onClickItem(itemName) {
     document.getElementById(itemName).scrollIntoView()
     // ToDo: 应当同时使对应的collapse content展开
 }
+
+useHead({
+  title: '业务范围一览',
+})
 </script>

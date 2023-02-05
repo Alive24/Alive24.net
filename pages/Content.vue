@@ -26,4 +26,5 @@ const content = type ? await queryContent(`/${type}`).where({ title: title })?.f
 // const renderContentMeta = (content) => {
 //     return
 // }
+useContentHead(content)
 </script>

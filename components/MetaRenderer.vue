@@ -9,7 +9,7 @@
             <h4 class="prose-sm">{{ metaObject.author }}</h4>
             <h4 class="prose-sm prose-slate">{{ metaObject.date }}</h4>
         </div>
-        <div>
+        <div class="w-2/3">
             <div class="block">
                 <div v-for="tag in metaObject.tags" :key="tag" class="badge badge-sm badge-accent badge-outline mr-1">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 22 22" stroke-width="1.5"
