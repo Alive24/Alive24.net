@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="container mx-auto py-10 px-5 xl:max-w-7xl">
+        <div class="container mx-auto py-10 px-3 xl:max-w-7xl">
             <div class="card lg:card-side bg-base-100 shadow-xl ">
                 <figure class="lg:w-2/5">
                     <img class="h-full rounded-full lg:rounded p-10 lg:p-0" src="/image/Profile.jpg" alt="Album" />

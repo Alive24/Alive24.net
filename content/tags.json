@@ -1,0 +1,21 @@
+{
+    "title": "Tag List",
+    "body": [
+        {
+            "name": "Sociology",
+            "nameCN": "社会学"
+        },
+        {
+            "name": "Freelancer",
+            "nameCN": "自由职业者"
+        },
+        {
+            "name": "Education",
+            "nameCN": "教育"
+        },
+        {
+            "name": "Non-Conventional Education in China",
+            "nameCN": "中国创新教育"
+        }
+    ]
+}

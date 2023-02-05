@@ -2,7 +2,7 @@
   "title": "ItemListRealmC",
   "type": "RealmItemList",
   "realmHero": "/image/Irago.png",
-  "realmName": "Consultance and Miscellaneous",
+  "realmName": "Consulting and Miscellaneous",
   "realmNameCN": "咨询与服务类",
   "realmDescription": "Consultance and Miscellaneous Description",
   "realmDescriptionCN": "咨询与其他服务类的说明",
@@ -58,7 +58,7 @@
       "categoryNameCN": "专业方向服务与咨询",
       "items": [
         {
-          "itemName": "Mental Health",
+          "itemName": "Mental Health Consulting",
           "itemNameCN": "精神健康相关咨询",
           "itemDescription": "BECBECBECBECBEC",
           "itemDescriptionCN": "剑桥商务英语辅导剑桥商务英语辅导剑桥商务英语辅导剑桥商务英语辅导",
@@ -66,7 +66,7 @@
           "linkedPageTitle": ""
         },
         {
-          "itemName": "Non-Conventional Education in China",
+          "itemName": "Non-Conventional Education Consulting in China",
           "itemNameCN": "创新教育相关咨询",
           "itemDescription": "BECBECBECBECBEC",
           "itemDescriptionCN": "剑桥商务英语辅导剑桥商务英语辅导剑桥商务英语辅导剑桥商务英语辅导",
