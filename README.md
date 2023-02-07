@@ -5,6 +5,8 @@
 ## 运维 DevOps
 - 本站为全静态。为了未来可能接入国内公众号提前进行备案，并进行了境内境外分流。
 - 境外站点使用Vercel直接根据commit构建，境内计划使用`Jenkins` + `Docker`自动部署，或使用OSS。
+- Jenkins - Blue Ocean
+    - `docker run -d -p 8080:8080 jenkinsci/blueocean`
 
 
 ## ToDo：
@@ -15,7 +17,9 @@
     - [] 关于页面的Sections部分
     - [x] 配图部分
 2. 2023-02-05
-    - [] 标题固定
+    - [x] 标题固定
+3. 2023-02-07
+    - [] 按地区显示备案
 
 
 ### Content

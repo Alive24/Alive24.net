@@ -8,49 +8,105 @@
                 <div class="card-body lg:w-5/6">
                     <!-- <p class="prose max-w-none whitespace-pre-wrap lg:h-64 flex flex-wrap">{{
                     }}</p> -->
-                    <ContentDoc v-slot="{ doc }" :path="`/about/about`">
+                    <ContentDoc :head="false" v-slot="{ doc }" :path="`/about/about`">
                         <ContentRenderer class="prose max-w-none prose" :value="doc" />
                     </ContentDoc>
                     <div class="card-actions justify-start">
                         <div class="hidden h-72 w-10/12 lg:flex gap-y-2 gap-x-2 flex-wrap w-full">
-                            <!-- <div v-for="category in realmContent.body" :key="category.categoryName"
-                                class="card rounded-box place-items-start">
-                                <h3 class="prose text-left">{{ category.categoryNameCN }}</h3>
-                                <div class="gap-y-2 gap-x-2 flex flex-wrap w-full ">
-                                    <button v-for="item in category.items" :key="item.itemName"
-                                        @click="activeItem = item.itemName"
-                                        :class="{ 'btn-outline': activeItem != item.itemName }"
-                                        class="btn btn-primary btn-sm">{{ item.itemNameCN }}</button>
-                                </div>
-                            </div> -->
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- <div v-for="category in realmContent.body" :key="category.categoryName"
-                class="card my-5 bg-base-100 shadow-xl">
-                <div class="card-body">
-                    <h2 class="card-title">{{ category.categoryNameCN }}</h2>
-                    <div v-for="item in category.items" :key="item.itemName" tabindex="0"
-                        class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box px-2">
-                        <input type="checkbox" />
-                        <div class="collapse-title font-bold">
-                            {{ item.itemNameCN }}
+        </div>
+        <div class="container mx-auto py-10 px-3 xl:max-w-7xl">
+            <div class="card lg:card-side bg-base-100 shadow-xl ">
+                <figure class="lg:w-2/5">
+                    <img class="h-full rounded-full lg:rounded p-10 lg:p-0" src="/image/UVic.jpeg" alt="Album" />
+                </figure>
+                <div class="card-body lg:w-5/6">
+                    <!-- <p class="prose max-w-none whitespace-pre-wrap lg:h-64 flex flex-wrap">{{
+                    }}</p> -->
+                    <ContentDoc :head="false" v-slot="{ doc }" :path="`/about/sections/education`">
+                        <ContentRenderer class="prose max-w-none" :value="doc" />
+                    </ContentDoc>
+                    <!-- <div class="card-actions justify-start">
+                        <div class="hidden h-72 w-10/12 lg:flex gap-y-2 gap-x-2 flex-wrap w-full">
                         </div>
-                        <div class="collapse-content">
-                            <article class="prose text-left">
-                                <p>{{ item.itemDescriptionCN }}</p>
-                                <ContentDoc :path="`/snippets/${item.itemSnippetTitle}`" />
-                                <div class="flex-none" :class="{ hidden: item.linkedPageTitle == '' }">
-                                    <NuxtLink :to="`/Content?type=pages&title=${item.linkedPageTitle}`">
-                                        <button class="btn btn-sm btn-primary">了解更多</button>
-                                    </NuxtLink>
-                                </div>
-                            </article>
-                        </div>
-                    </div>
+                    </div> -->
                 </div>
-            </div> -->
+            </div>
+        </div>
+        <div class="container mx-auto py-10 px-3 xl:max-w-7xl">
+            <div class="card lg:card-side bg-base-100 shadow-xl ">
+                <figure class="lg:w-2/5">
+                    <img class="h-full rounded-full lg:rounded p-10 lg:p-0" src="/image/UVic.jpeg" alt="Album" />
+                </figure>
+                <div class="card-body lg:w-5/6">
+                    <!-- <p class="prose max-w-none whitespace-pre-wrap lg:h-64 flex flex-wrap">{{
+                    }}</p> -->
+                    <ContentDoc :head="false" v-slot="{ doc }" :path="`/about/sections/career`">
+                        <ContentRenderer class="prose max-w-none" :value="doc" />
+                    </ContentDoc>
+                    <!-- <div class="card-actions justify-start">
+                        <div class="hidden h-72 w-10/12 lg:flex gap-y-2 gap-x-2 flex-wrap w-full">
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <div class="container mx-auto py-10 px-3 xl:max-w-7xl">
+            <div class="card lg:card-side bg-base-100 shadow-xl ">
+                <figure class="lg:w-2/5">
+                    <img class="h-full rounded-full lg:rounded p-10 lg:p-0" src="/image/UVic.jpeg" alt="Album" />
+                </figure>
+                <div class="card-body lg:w-5/6">
+                    <!-- <p class="prose max-w-none whitespace-pre-wrap lg:h-64 flex flex-wrap">{{
+                    }}</p> -->
+                    <ContentDoc :head="false" v-slot="{ doc }" :path="`/about/sections/projects`">
+                        <ContentRenderer class="prose max-w-none" :value="doc" />
+                    </ContentDoc>
+                    <!-- <div class="card-actions justify-start">
+                        <div class="hidden h-72 w-10/12 lg:flex gap-y-2 gap-x-2 flex-wrap w-full">
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <div class="container mx-auto py-10 px-3 xl:max-w-7xl">
+            <div class="card lg:card-side bg-base-100 shadow-xl ">
+                <figure class="lg:w-2/5">
+                    <img class="h-full rounded-full lg:rounded p-10 lg:p-0" src="/image/UVic.jpeg" alt="Album" />
+                </figure>
+                <div class="card-body lg:w-5/6">
+                    <!-- <p class="prose max-w-none whitespace-pre-wrap lg:h-64 flex flex-wrap">{{
+                    }}</p> -->
+                    <ContentDoc :head="false" v-slot="{ doc }" :path="`/about/sections/interests`">
+                        <ContentRenderer class="prose max-w-none" :value="doc" />
+                    </ContentDoc>
+                    <!-- <div class="card-actions justify-start">
+                        <div class="hidden h-72 w-10/12 lg:flex gap-y-2 gap-x-2 flex-wrap w-full">
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <div class="container mx-auto py-10 px-3 xl:max-w-7xl">
+            <div class="card lg:card-side bg-base-100 shadow-xl ">
+                <figure class="lg:w-2/5">
+                    <img class="h-full rounded-full lg:rounded p-10 lg:p-0" src="/image/UVic.jpeg" alt="Album" />
+                </figure>
+                <div class="card-body lg:w-5/6">
+                    <!-- <p class="prose max-w-none whitespace-pre-wrap lg:h-64 flex flex-wrap">{{
+                    }}</p> -->
+                    <ContentDoc :head="false" v-slot="{ doc }" :path="`/about/sections/hobbies`">
+                        <ContentRenderer class="prose max-w-none" :value="doc" />
+                    </ContentDoc>
+                    <!-- <div class="card-actions justify-start">
+                        <div class="hidden h-72 w-10/12 lg:flex gap-y-2 gap-x-2 flex-wrap w-full">
+                        </div>
+                    </div> -->
+                </div>
+            </div>
         </div>
     </div>
 </template>
@@ -71,4 +127,8 @@ const realmContentList = activeRealm ? await queryContent()?.where({ type: "Real
 // const getItemSnippetContent = async (itemSnippetTitle) => {
 //     return itemSnippetTitle ? await queryContent(`/snippets`)?.where({ title: itemSnippetTitle }).find() : ""
 // }
+
+useHead({
+    title: '关于Alive',
+})
 </script>

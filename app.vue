@@ -108,6 +108,7 @@
       </div>
       <!-- Page content here -->
       <NuxtPage />
+      <a class="footer footer-center" href="https://beian.miit.gov.cn/" target="_blank">粤ICP备2023007677号-1</a>
     </div>
     <div class="drawer-side">
       <input id="my-drawer" type="checkbox" class="drawer-toggle" />
