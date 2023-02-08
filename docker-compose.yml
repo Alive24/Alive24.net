@@ -7,5 +7,4 @@ services:
     restart: always
     ports:
       - "3000:3000"
-    networks:
-      - decent
+    network_mode: "host" 
