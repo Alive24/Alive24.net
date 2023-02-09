@@ -2,7 +2,9 @@ version: "3.7"
 
 services:
   nuxt-app:
-    build: .
+    build:
+      context: .
+      no_cache: true
     container_name: nuxt-app
     restart: always
     ports:
