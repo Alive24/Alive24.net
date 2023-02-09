@@ -201,4 +201,14 @@ body {
 .prose :where(h2):not(:where([class~="not-prose"] *)) {
   font-weight: bold;
 }
+
+/* .drawer-toggle ~ .drawer-side {
+  grid-column-start:unset;
+  grid-row-start:unset;
+}
+
+.drawer-toggle ~ .drawer-content {
+  grid-column-start:unset;
+  grid-row-start:unset;
+} */
 </style>
