@@ -27,7 +27,7 @@ const heroContent = computed(() => {
                 <h1 class="text-5xl font-bold">{{ heroContent.title }}</h1>
                 <p class="py-6 prose-sm text-left">{{ heroContent.intro }}</p>
                 <p class="py-6 prose-sm text-left italic">{{ heroContent.reference }}</p>
-                <div class="flex gap-x-8 justify-between">
+                <div class="flex lg:gap-x-8 justify-between">
                     <NuxtLink to="/RealmBoard">
                         <button class="btn btn-outline">业务范围一览</button>
                     </NuxtLink>
