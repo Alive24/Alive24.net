@@ -21,7 +21,7 @@ const heroContent = computed(() => {
 </script>
 
 <template>
-    <div class="hero h-screen">
+    <div class="hero h-[88vh]">
         <div class="hero-content text-center">
             <div class="max-w-md">
                 <h1 class="text-5xl font-bold">{{ heroContent.title }}</h1>
