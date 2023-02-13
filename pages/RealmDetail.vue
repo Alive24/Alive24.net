@@ -1,11 +1,12 @@
 <template>
-    <div>
+    <div class="mx-[10px]">
         <div v-for="realmContent in realmContentList" :key="realmContent.title">
-            <div class="container mx-auto py-10 px-3 xl:max-w-7xl"
+            <div class="container py-10 xl:max-w-7xl"
                 :class="{ hidden: contentTitle != realmContent.title }">
                 <div class="card lg:card-side bg-base-100 shadow-xl ">
                     <figure class="lg:w-2/5">
-                        <img class="h-full" :src="`${realmContent.realmHero}`" alt="Album" />
+                        <img class="h-full" :src="`${realmContent.realmHero}`" alt="Album"
+                            style="max-width: unset;object-fit: cover;width: 100%" />
                     </figure>
                     <div class="card-body lg:w-5/6">
                         <h2 class="card-title">{{ realmContent.realmNameCN }}</h2>
@@ -43,7 +44,8 @@
                             <div class="collapse-content">
                                 <article class="prose text-left">
                                     <p>{{ item.itemDescriptionCN }}</p>
-                                    <ContentDoc :head=false v-if="item.itemSnippetTitle != ''" v-slot="{ doc }" :path="`/snippets/${item.itemSnippetTitle}`">
+                                    <ContentDoc :head=false v-if="item.itemSnippetTitle != ''" v-slot="{ doc }"
+                                        :path="`/snippets/${item.itemSnippetTitle}`">
                                         <ContentRenderer class="prose max-w-none prose-sm" :value="doc" />
                                     </ContentDoc>
                                     <div v-if="item.linkedPageTitle != ''" class="flex-none">
@@ -91,6 +93,6 @@ function onClickItem(itemName) {
 }
 
 useHead({
-  title: '业务范围一览',
+    title: '业务范围一览',
 })
 </script>
