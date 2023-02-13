@@ -1,19 +1,20 @@
 <script setup>
 const { data: PagesNavigation } = await useAsyncData('navigation', () => fetchContentNavigation('/pages'))
 useHead({
-  title: '专页列表',
+    title: '专页列表',
 })
 </script>
 
 
 <template>
-    <div class="mx-auto flex flex-wrap px-3 mt-10 lg:mt-10 gap-10 lg:justify-between pb-10">
-        <div v-for="page in PagesNavigation[0].children" :key="page.title" class="card w-96 bg-base-100 shadow-xl">
+    <div class="h-full py-[50px] lg:pt-[4rem] lg:pb-[10px] gap-x-4 gap-y-8 flex flex-wrap justify-center content-start items-center w-full">
+        <div v-for="page in PagesNavigation[0].children" :key="page.title"
+            class="card mx-[10px] lg:w-[25rem] bg-base-100 shadow-xl h-[95%] content-start">
             <ContentDoc v-slot="{ doc }" :path="`${page._path}`" :head=false>
-                <figure class="px-0 pb-5 h-3/5">
-                    <img class="rounded-lg" :src="doc.image.src" alt="Album" />
+                <figure class="h-[45%]">
+                    <img class="rounded-lg w-full self-start" :src="doc.image.src" alt="Album" />
                 </figure>
-                <div class="card-body">
+                <div class="card-body h-[55%]">
                     <NuxtLink :to="`/Content?type=pages&title=${doc.title}`">
                         <h2 class="prose-2xl font-bold max-w-none flex justify-between gap-2 items-center">
                             {{ doc.title }}

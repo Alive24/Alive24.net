@@ -6,7 +6,7 @@ useHead({
 </script>
 
 <template>
-    <div class="container mx-auto py-5 px-3 lg:w-1/2">
+    <div class="h-full container mx-auto py-5 px-3 lg:w-1/2">
         <div class="card mx-auto max-w-screen-lg bg-base-100 shadow-xl pt-5 lg:card-side">
             <figure class="lg:w-2/5">
                 <img class="w-full" src="/image/Foucault.png" alt="Album" />

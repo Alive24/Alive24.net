@@ -191,10 +191,12 @@
       </div>
     </div>
     <!-- Page content here -->
-    <div class="flex items-center h-[100%]">
-      <NuxtPage class="content-center" />
+    <div class="flex items-center h-[100%] overflow-y-scroll">
+      <NuxtPage class="content-center " />
     </div>
-    <a class="flex justify-center prose-sm" href="https://beian.miit.gov.cn/" target="_blank">粤ICP备2023007677号-1</a>
+    <div class="flex justify-center prose-sm bg-transparent">
+      <a  href="https://beian.miit.gov.cn/" target="_blank">粤ICP备2023007677号-1</a>
+    </div>
   </div>
 </template>
 
