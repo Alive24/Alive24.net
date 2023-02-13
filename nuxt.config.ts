@@ -10,7 +10,7 @@ export default defineNuxtConfig({
         },
         pageTransition: { name: 'page', mode: 'out-in' }
     },
-    modules: ['@nuxtjs/tailwindcss', '@nuxtjs/i18n', '@nuxt/content'],
+    modules: ['@nuxtjs/tailwindcss', '@nuxtjs/i18n', '@nuxt/content', '@nuxtjs/device'],
     i18n: {
         vueI18n: {
             legacy: false,

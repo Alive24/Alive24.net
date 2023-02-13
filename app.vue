@@ -193,8 +193,12 @@
     <!-- Page content here -->
     <div class="items-center h-[100%] overflow-y-auto" style="scrollbar-width: thin;">
       <NuxtPage class="content-center" />
-      <div class="flex justify-center prose-sm bg-transparent mt-[20px] text-xs">
+      <div class="flex justify-center prose-sm bg-transparent mt-[20px] text-xs gap-x-5">
         <a href="https://beian.miit.gov.cn/" target="_blank">粤ICP备2023007677号-1</a>
+        <a  class='h-[16px]' target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44030802000641">
+          <img src="http://www.beian.gov.cn/img/ghs.png" style="float:left; height: 16px; margin: 0"/>
+          粤公网安备44030802000641号
+        </a>
       </div>
     </div>
   </div>
@@ -241,20 +245,19 @@ body {
 
 
 
-::-webkit-scrollbar
-{
-   width:3px;
-   background-color:#F5F5F5;
+::-webkit-scrollbar {
+  width: 3px;
+  background-color: #F5F5F5;
 }
+
 /*定义滚动条轨道：内阴影+圆角*/
-::-webkit-scrollbar-track
-{
-   background-color:#F5F5F5;
+::-webkit-scrollbar-track {
+  background-color: #F5F5F5;
 }
+
 /*定义滑块：内阴影+圆角*/
-::-webkit-scrollbar-thumb
-{
-   border-radius:10px;
-   background-color:#555;
-} 
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #555;
+}
 </style>
