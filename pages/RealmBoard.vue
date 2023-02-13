@@ -56,8 +56,8 @@ const route = useRoute()
 
 
 <template>
-    <div class="gap-x-4 gap-y-8 flex flex-wrap w-full justify-center content-start">
-        <div class="flex-wrap w-auto mx-[10px] card bg-base-100 lg:w-96 rounded-box">
+    <div class="gap-x-4 gap-y-8 flex flex-wrap w-full px-[10px] justify-center content-start">
+        <div class="flex-wrap w-auto card bg-base-100 lg:w-96 rounded-box">
             <div class="flex-wrap card bg-base-100 shadow-xl">
                 <figure>
                     <div class="relative w-full">

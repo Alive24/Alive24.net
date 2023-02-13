@@ -1,5 +1,5 @@
 <template>
-    <div class="container mx-auto py-5 mx-[10px]">
+    <div class="h-full container py-5 px-[10px]">
         <div class="card mx-auto max-w-screen-lg bg-base-100 shadow-xl ">
             <figure class="pt-5 "><img class="rounded-lg lg:w-1/2" :src="content.image.src" alt="Album" /></figure>
             <div class="card-body px-5 mx-auto">

@@ -1,7 +1,7 @@
 <template>
-    <div class="mx-[10px]">
+    <div class="px-[10px] h-auto w-full container">
         <div v-for="realmContent in realmContentList" :key="realmContent.title">
-            <div class="container py-10 xl:max-w-7xl"
+            <div class="mx-auto container py-10 xl:max-w-7xl"
                 :class="{ hidden: contentTitle != realmContent.title }">
                 <div class="card lg:card-side bg-base-100 shadow-xl ">
                     <figure class="lg:w-2/5">

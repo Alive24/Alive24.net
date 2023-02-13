@@ -13,9 +13,9 @@
         <div class="dropdown lg:hidden">
           <label tabindex="0" class="btn btn-square btn-ghost">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-            class="inline-block w-6 h-6 stroke-current">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-          </svg>
+              class="inline-block w-6 h-6 stroke-current">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
           </label>
           <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
             <li tabindex="0">
@@ -191,11 +191,11 @@
       </div>
     </div>
     <!-- Page content here -->
-    <div class="flex items-center h-[100%] overflow-y-scroll">
-      <NuxtPage class="content-center " />
-    </div>
-    <div class="flex justify-center prose-sm bg-transparent">
-      <a  href="https://beian.miit.gov.cn/" target="_blank">粤ICP备2023007677号-1</a>
+    <div class="items-center h-[100%] overflow-y-auto" style="scrollbar-width: thin;">
+      <NuxtPage class="content-center" />
+      <div class="flex justify-center prose-sm bg-transparent mt-[20px] text-xs">
+        <a href="https://beian.miit.gov.cn/" target="_blank">粤ICP备2023007677号-1</a>
+      </div>
     </div>
   </div>
 </template>
@@ -238,4 +238,23 @@ body {
 .prose :where(h2):not(:where([class~="not-prose"] *)) {
   font-weight: bold;
 }
+
+
+
+::-webkit-scrollbar
+{
+   width:3px;
+   background-color:#F5F5F5;
+}
+/*定义滚动条轨道：内阴影+圆角*/
+::-webkit-scrollbar-track
+{
+   background-color:#F5F5F5;
+}
+/*定义滑块：内阴影+圆角*/
+::-webkit-scrollbar-thumb
+{
+   border-radius:10px;
+   background-color:#555;
+} 
 </style>
