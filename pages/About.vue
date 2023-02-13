@@ -1,5 +1,5 @@
 <template>
-    <div class="h-auto container py-5 px-[10px]">
+    <div class="h-auto mx-auto container py-5 px-[10px]">
         <div class="mx-auto py-10 px-3 xl:max-w-7xl">
             <div class="card lg:card-side bg-base-100 shadow-xl ">
                 <figure class="lg:w-2/5">

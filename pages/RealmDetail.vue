@@ -1,5 +1,5 @@
 <template>
-    <div class="px-[10px] h-auto w-full container">
+    <div class="px-[10px] h-auto w-full mx-auto container">
         <div v-for="realmContent in realmContentList" :key="realmContent.title">
             <div class="mx-auto container py-10 xl:max-w-7xl"
                 :class="{ hidden: contentTitle != realmContent.title }">

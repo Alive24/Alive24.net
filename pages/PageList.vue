@@ -7,7 +7,7 @@ useHead({
 
 
 <template>
-    <div class="px-[10px] h-full py-[50px] lg:pt-[4rem] lg:pb-[10px] gap-x-4 gap-y-8 flex flex-wrap justify-center content-start items-center w-full">
+    <div class="mx-auto px-[10px] h-full py-[50px] lg:pt-[4rem] lg:pb-[10px] gap-x-4 gap-y-8 flex flex-wrap justify-center content-start items-center w-full">
         <div v-for="page in PagesNavigation[0].children" :key="page.title"
             class="card lg:w-[25rem] bg-base-100 shadow-xl h-[95%] content-start">
             <ContentDoc v-slot="{ doc }" :path="`${page._path}`" :head=false>
