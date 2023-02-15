@@ -1,6 +1,6 @@
 <template>
     <div class="h-auto mx-auto container py-5 px-[10px]">
-        <div class="mx-auto py-10 px-3 xl:max-w-7xl">
+        <div class="mx-auto py-10 xl:max-w-7xl">
             <div class="card lg:card-side bg-base-100 shadow-xl ">
                 <figure class="lg:w-2/5">
                     <img class="h-full rounded-full lg:rounded p-10 lg:p-0" src="/image/Profile.jpg" alt="Album" />
@@ -18,7 +18,7 @@
                 </div>
             </div>
         </div>
-        <div class="container mx-auto py-10 px-3 xl:max-w-7xl">
+        <div class="container mx-auto py-10 xl:max-w-7xl">
             <div class="card lg:card-side bg-base-100 shadow-xl ">
                 <figure class="lg:w-2/5">
                     <img class="h-full rounded-full lg:rounded p-10 lg:p-0" src="/image/UVic.jpeg" alt="Album" />
@@ -36,7 +36,43 @@
                 </div>
             </div>
         </div>
-        <div class="container mx-auto py-10 px-3 xl:max-w-7xl">
+        <div class="container mx-auto py-10 xl:max-w-7xl">
+            <div class="card lg:card-side bg-base-100 shadow-xl ">
+                <figure class="lg:w-2/5">
+                    <img class="h-full rounded-full lg:rounded p-10 lg:p-0" src="/image/UVic.jpeg" alt="Album" />
+                </figure>
+                <div class="card-body lg:w-5/6">
+                    <!-- <p class="prose max-w-none whitespace-pre-wrap lg:h-64 flex flex-wrap">{{
+                    }}</p> -->
+                    <ContentDoc :head="false" v-slot="{ doc }" :path="`/about/sections/skills`">
+                        <ContentRenderer class="prose max-w-none" :value="doc" />
+                    </ContentDoc>
+                    <!-- <div class="card-actions justify-start">
+                        <div class="hidden h-72 w-10/12 lg:flex gap-y-2 gap-x-2 flex-wrap w-full">
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <div class="container mx-auto py-10 xl:max-w-7xl">
+            <div class="card lg:card-side bg-base-100 shadow-xl ">
+                <figure class="lg:w-2/5">
+                    <img class="h-full rounded-full lg:rounded p-10 lg:p-0" src="/image/UVic.jpeg" alt="Album" />
+                </figure>
+                <div class="card-body lg:w-5/6">
+                    <!-- <p class="prose max-w-none whitespace-pre-wrap lg:h-64 flex flex-wrap">{{
+                    }}</p> -->
+                    <ContentDoc :head="false" v-slot="{ doc }" :path="`/about/sections/stacks`">
+                        <ContentRenderer class="prose max-w-none" :value="doc" />
+                    </ContentDoc>
+                    <!-- <div class="card-actions justify-start">
+                        <div class="hidden h-72 w-10/12 lg:flex gap-y-2 gap-x-2 flex-wrap w-full">
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <div class="container mx-auto py-10 xl:max-w-7xl">
             <div class="card lg:card-side bg-base-100 shadow-xl ">
                 <figure class="lg:w-2/5">
                     <img class="h-full rounded-full lg:rounded p-10 lg:p-0" src="/image/UVic.jpeg" alt="Album" />
@@ -54,7 +90,7 @@
                 </div>
             </div>
         </div>
-        <div class="container mx-auto py-10 px-3 xl:max-w-7xl">
+        <div class="container mx-auto py-10 xl:max-w-7xl">
             <div class="card lg:card-side bg-base-100 shadow-xl ">
                 <figure class="lg:w-2/5">
                     <img class="h-full rounded-full lg:rounded p-10 lg:p-0" src="/image/UVic.jpeg" alt="Album" />
@@ -72,7 +108,7 @@
                 </div>
             </div>
         </div>
-        <div class="container mx-auto py-10 px-3 xl:max-w-7xl">
+        <div class="container mx-auto py-10 xl:max-w-7xl">
             <div class="card lg:card-side bg-base-100 shadow-xl ">
                 <figure class="lg:w-2/5">
                     <img class="h-full rounded-full lg:rounded p-10 lg:p-0" src="/image/UVic.jpeg" alt="Album" />
@@ -90,7 +126,25 @@
                 </div>
             </div>
         </div>
-        <div class="container mx-auto py-10 px-3 xl:max-w-7xl">
+        <div class="container mx-auto py-10 xl:max-w-7xl">
+            <div class="card lg:card-side bg-base-100 shadow-xl ">
+                <figure class="lg:w-2/5">
+                    <img class="h-full rounded-full lg:rounded p-10 lg:p-0" src="/image/UVic.jpeg" alt="Album" />
+                </figure>
+                <div class="card-body lg:w-5/6">
+                    <!-- <p class="prose max-w-none whitespace-pre-wrap lg:h-64 flex flex-wrap">{{
+                    }}</p> -->
+                    <ContentDoc :head="false" v-slot="{ doc }" :path="`/about/sections/area`">
+                        <ContentRenderer class="prose max-w-none" :value="doc" />
+                    </ContentDoc>
+                    <!-- <div class="card-actions justify-start">
+                        <div class="hidden h-72 w-10/12 lg:flex gap-y-2 gap-x-2 flex-wrap w-full">
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <div class="container mx-auto py-10 xl:max-w-7xl">
             <div class="card lg:card-side bg-base-100 shadow-xl ">
                 <figure class="lg:w-2/5">
                     <img class="h-full rounded-full lg:rounded p-10 lg:p-0" src="/image/UVic.jpeg" alt="Album" />

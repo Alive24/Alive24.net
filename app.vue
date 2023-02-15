@@ -196,7 +196,7 @@
       <div class="flex justify-center prose-sm bg-transparent mt-[20px] text-xs gap-x-5">
         <a href="https://beian.miit.gov.cn/" target="_blank">粤ICP备2023007677号-1</a>
         <a  class='h-[16px]' target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44030802000641">
-          <img src="https://www.beian.gov.cn/img/new/gongan.png" style="float:left; height: 16px; margin: 0"/>
+          <img src="/image/gongan.png" style="float:left; height: 16px; margin: 0"/>
           粤公网安备44030802000641号
         </a>
       </div>
@@ -235,12 +235,26 @@ body {
 }
 
 .prose :where(a):not(:where([class~="not-prose"] *)) {
-  text-decoration-line: none;
+  text-decoration-line: underline;
   font-weight: inherit;
 }
 
-.prose :where(h2):not(:where([class~="not-prose"] *)) {
+.prose :where(h2):not(:where([class~="not-prose"] *)) a {
   font-weight: bold;
+  text-decoration-line: none;
+}
+.prose :where(h3):not(:where([class~="not-prose"] *)) a {
+  font-weight: bold;
+  text-decoration-line: none;
+}
+.prose :where(h4):not(:where([class~="not-prose"] *)) a {
+  font-weight: bold;
+  text-decoration-line: none;
+}
+
+.prose :where(code):not(:where([class~="not-prose"] *)) {
+  font-weight: 600;
+  font-size:0.9em;
 }
 
 
