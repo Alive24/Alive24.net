@@ -1,39 +1,75 @@
-# Alive24.net
+# Nuxt 3 Minimal Starter
 
-本站立项于2023-01-07，使用`Vue 3` + `Nuxt 3` + `DaisyUI` + `TailwindCSS`开发，作为我的个人网站，用于支持我的自由职业者生涯发展（包括展示业务、更新动态），以及发布我的写作内容。
+Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
-## 运维 DevOps
-- 本站为全静态。为了未来可能接入国内公众号提前进行了备案。
-- 项目部署于`4everland`，并由Webhook触发自动重新部署。
-    - 原计划部署于`Vercel`，但国内CDN效果较差，放弃；后计划使用`阿里云ECS` + `Docker` + `Portainer`/`Jenkins`自行进行CI，但对服务器要求过高，最终决定全域部署于`4everland`
+## Setup
 
+Make sure to install the dependencies:
 
-## ToDo：
-### Dev
-1. 2023-02-02
-    - [] 处理所有报错。
-    - [] Post与Page内容分类标签过滤
-    - [] 关于页面的Sections部分
-    - [x] 配图部分
-2. 2023-02-05
-    - [x] 标题固定
-3. 2023-02-07
-    - [] 按地区显示备案
-4. 2023-02-09
-    - [] 制作提示安卓与PC微信使用浏览器访问
-5. 2023-02-16
-    - [] RealmDetail下的分享按钮，支持微信、Whatsapp、Telegram、复制链接
+```bash
+# npm
+npm install
 
+# pnpm
+pnpm install
 
-### Content
-1. 2023-02-02
-    - [x] 更新联系信息。
-    - [] 更新关于页面。
-    - [x] 更新已有文章配图
-2. 2023-02-05
-    - [] Items的简介补完
-3. 2023-02-13
-    - [] 书写关于`Vercel`和`4everland`使用的心得
-    - [] 书写`ChatGPT`, `Web3`, `微信`之间的思考
+# yarn
+yarn install
 
+# bun
+bun install
+```
 
+## Development Server
+
+Start the development server on `http://localhost:3000`:
+
+```bash
+# npm
+npm run dev
+
+# pnpm
+pnpm run dev
+
+# yarn
+yarn dev
+
+# bun
+bun run dev
+```
+
+## Production
+
+Build the application for production:
+
+```bash
+# npm
+npm run build
+
+# pnpm
+pnpm run build
+
+# yarn
+yarn build
+
+# bun
+bun run build
+```
+
+Locally preview production build:
+
+```bash
+# npm
+npm run preview
+
+# pnpm
+pnpm run preview
+
+# yarn
+yarn preview
+
+# bun
+bun run preview
+```
+
+Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.

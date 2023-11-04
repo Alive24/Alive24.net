@@ -1,7 +1,14 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: 'class',
-  content: [],
+  content: [
+    "./components/**/*.{js,vue,ts}",
+    "./layouts/**/*.vue",
+    "./pages/**/*.vue",
+    "./plugins/**/*.{js,ts}",
+    "./app.vue",
+    "./error.vue",
+  ],
   theme: {
     screens: {
       'sm': '640px',
@@ -36,39 +43,39 @@ module.exports = {
               "color": "#b4d6fa !important",
               "background-color": "#25313f !important",
               "border-radius": "0.375rem !important"
-          }
+            }
+          },
         },
       },
     },
   },
-},
   daisyui: {
-  themes: [
-    {
-      'alive': {
-        "primary": "#2C3E50",
-        "secondary": "#eef2f5",
-        "accent": "#f97316",
-        "neutral": "#9ca3af",
-        "base-100": "#FFFFFF",
-        "info": "#93E6FB",
-        "success": "#d9f99d",
-        "warning": "#fde68a",
-        "error": "#E58B8B",
+    themes: [
+      {
+        'alive': {
+          "primary": "#2C3E50",
+          "secondary": "#eef2f5",
+          "accent": "#f97316",
+          "neutral": "#9ca3af",
+          "base-100": "#FFFFFF",
+          "info": "#93E6FB",
+          "success": "#d9f99d",
+          "warning": "#fde68a",
+          "error": "#E58B8B",
+        },
+        'alive-dark': {
+          "primary": "#2C3E50",
+          "secondary": "#eef2f5",
+          "accent": "#f97316",
+          "neutral": "#9ca3af",
+          "base-100": "#000000",
+          "info": "#93E6FB",
+          "success": "#d9f99d",
+          "warning": "#fde68a",
+          "error": "#E58B8B",
+        },
       },
-      'alive-dark': {
-        "primary": "#2C3E50",
-        "secondary": "#eef2f5",
-        "accent": "#f97316",
-        "neutral": "#9ca3af",
-        "base-100": "#000000",
-        "info": "#93E6FB",
-        "success": "#d9f99d",
-        "warning": "#fde68a",
-        "error": "#E58B8B",
-      },
-    },
-  ],
+    ],
   },
-plugins: [require("@tailwindcss/typography"), require('autoprefixer'), require("daisyui")],
+  plugins: [require("@tailwindcss/typography"), require('autoprefixer'), require("daisyui")],
 }

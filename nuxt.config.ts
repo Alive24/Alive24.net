@@ -1,35 +1,22 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-    ssr: false,
-    nitro: {
-      preset: 'service-worker'
+  devtools: { enabled: true },
+  ssr: true,
+  nitro: {
+    preset: 'service-worker'
+  },
+  app: {
+    head: {
+      title: 'Alive的工作台'
     },
-    app: {
-        head: {
-            title:'Alive的工作台'
-        },
-        pageTransition: { name: 'page', mode: 'out-in' }
+    pageTransition: { name: 'page', mode: 'out-in' }
+  },
+  modules: ['@nuxtjs/i18n', '@nuxt/content', '@nuxtjs/device'],
+  css: ['~/assets/css/main.css'],
+  postcss: {
+    plugins: {
+      tailwindcss: {},
+      autoprefixer: {},
     },
-    modules: ['@nuxtjs/tailwindcss', '@nuxtjs/i18n', '@nuxt/content', '@nuxtjs/device'],
-    i18n: {
-        vueI18n: {
-            legacy: false,
-            locale: 'en',
-            messages: {
-                en: {
-                    welcome: 'Welcome'
-                },
-                fr: {
-                    welcome: 'Bienvenue'
-                }
-            }
-        }
-        /* module options */
-    },
-    content: {
-        // https://content.nuxtjs.org/api/configuration
-    },
-    router: {
-        
-    }
+  },
 })
