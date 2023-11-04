@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "@nuxt/content": "^2.9.0",
+    "@nuxtjs/i18n": "next",
     "@tailwindcss/typography": "^0.5.10",
     "autoprefixer": "^10.4.16",
     "postcss": "^8.4.31",
